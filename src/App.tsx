@@ -1,33 +1,73 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
+import { Languages, Tabs } from './define/Types';
+import Page from './components/Page';
+import { Translator as t }from './i18n/Translator';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [width, setWidth] = useState<number>(window.innerWidth);
+  const [tab, setTab] = useState<Tabs>(Tabs.Home)
+  const [language, setLanguage] = useState<Languages>(Languages.En);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  function onWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener('resize', onWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', onWindowSizeChange);
+    }
+  }, []);
+  const isMobile = width <= 768;
+  if (!isMobile) setIsMenuOpen(false);
+
+  function onChangeLanguage(language: string) {
+    switch(language) {
+      case 'en':
+        setLanguage(Languages.En);
+        break;
+      case 'cht':
+        setLanguage(Languages.Cht);
+        break;
+      default:
+        setLanguage(Languages.En);
+        break;
+    }
+  }  
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {
+      isMobile ? 
+        // Mobile Layout
+        <>
+          <div className='header'>
+            <div className='header-item-center'>VanillaFox</div>
+          </div>
+          <hr/>
+          <Page currentPage={tab} language={language}/>
+        </>
+      : 
+        // Desktop Layout
+        <>
+          <div className='header'>
+            <div className='header-item' onClick={() => {setTab(Tabs.Home)}}>VanillaFox</div>
+            <div className='header-push-right' onClick={() => {setTab(Tabs.Home)}}>{t('header-home', language)}</div>
+            <div className='header-item' onClick={() => {setTab(Tabs.Portfolio)}}>{t('header-portfolio', language)}</div>
+            <div className='header-item' onClick={() => {setTab(Tabs.Commission)}}>{t('header-commission', language)}</div>
+            <div className='header-item' onClick={() => {setTab(Tabs.Contact)}}>{t('header-contact', language)}</div>
+            <select className='header-language-select' onChange={(e) => {
+                onChangeLanguage(e.target.value);
+            }}>
+                <option value='en'>English</option>
+                <option value='cht'>繁體中文</option>
+            </select>
+          </div>
+          <hr/>
+          <Page currentPage={tab} language={language}/>
+        </>
+      }
     </>
   )
 }
