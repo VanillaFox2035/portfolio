@@ -5,31 +5,72 @@
   text-align: center;
 }
 
+.hamburger-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 2;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.1s;
+}
+.hamburger-menu-close {
+  display: block;
+  margin-left: auto;
+  margin-right: 30px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.hamburger-menu-language-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes fadeInOpacity {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+}
+
 .header {
   display: flex;
 }
 .header-item {
-  padding: 0.5em;
+  font-size: 1.2em;
+  padding: 0.3em;
   padding-left: 1em;
   padding-right: 1em;
   cursor: pointer;
 }
 .header-push-right {
-  padding: 0.5em;
+  font-size: 1.2em;
+  padding: 0.3em;
   padding-left: 1em;
   padding-right: 1em;
   margin-left: auto;
   cursor: pointer;
 }
-.header-center {
-
+.header-item-flag {
+  margin-left: 1.5em;
+  width: 40px;
+}
+.header-hamburger {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 .header-language-select {
   background-color: white;
-  color: darkgray;
-  border-color: darkgray;
-  border-radius: 0.5em;
-  font-size: 1em;
-  padding-left: 0.7em;
-  padding-right: 0.7em;
+  color: #1a1a1a;
+  border-style: none;
+  font-size: 1.2em;
+  padding-left: 0;
+  margin: 0;
 }

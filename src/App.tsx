@@ -20,7 +20,6 @@ function App() {
     }
   }, []);
   const isMobile = width <= 768;
-  if (!isMobile) setIsMenuOpen(false);
 
   function onChangeLanguage(language: string) {
     switch(language) {
@@ -43,10 +42,30 @@ function App() {
         // Mobile Layout
         <>
           <div className='header'>
-            <div className='header-item-center'>VanillaFox</div>
+            <img className='header-hamburger' src='/icon/Hamburger.svg' onClick={() => {setIsMenuOpen(true)}}/>
+            <div className='header-item-center' >VanillaFox</div>
           </div>
           <hr/>
           <Page currentPage={tab} language={language}/>
+          {isMenuOpen && <div className='hamburger-menu'>
+            <br/>
+            <img className='hamburger-menu-close' src='/icon/X-Symbol.svg' onClick={() => setIsMenuOpen(false)}/>
+            <h2>{t('navigate', language)}</h2>
+            <div className='header-item' onClick={() => {setTab(Tabs.Home); setIsMenuOpen(false)}}>{t('header-home', language)}</div>
+            <div className='header-item' onClick={() => {setTab(Tabs.Portfolio); setIsMenuOpen(false)}}>{t('header-portfolio', language)}</div>
+            <div className='header-item' onClick={() => {setTab(Tabs.Commission); setIsMenuOpen(false)}}>{t('header-commission', language)}</div>
+            <div className='header-item' onClick={() => {setTab(Tabs.Contact); setIsMenuOpen(false)}}>{t('header-contact', language)}</div>
+            <br/>
+            <h2>{t('language', language)}</h2>
+            <div className='hamburger-menu-language-option' onClick={() => {setLanguage(Languages.En)}}>
+              <img src={t('language-icon', Languages.En)}/>
+              <div className='header-item'>English</div>
+            </div>
+            <div className='hamburger-menu-language-option' onClick={() => {setLanguage(Languages.Cht)}}>
+              <img src={t('language-icon', Languages.Cht)}/>
+              <div className='header-item'>繁體中文</div>
+            </div>
+            </div>}
         </>
       : 
         // Desktop Layout
@@ -57,6 +76,7 @@ function App() {
             <div className='header-item' onClick={() => {setTab(Tabs.Portfolio)}}>{t('header-portfolio', language)}</div>
             <div className='header-item' onClick={() => {setTab(Tabs.Commission)}}>{t('header-commission', language)}</div>
             <div className='header-item' onClick={() => {setTab(Tabs.Contact)}}>{t('header-contact', language)}</div>
+            <img className='header-item-flag' src={t('language-icon', language)}/>
             <select className='header-language-select' onChange={(e) => {
                 onChangeLanguage(e.target.value);
             }}>
