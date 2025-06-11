@@ -3,11 +3,13 @@ import Home from './Pages/Home';
 import Portfolio from './Pages/Portfolio';
 import Commission from './Pages/Commission';
 import Contact from './Pages/Contact';
+import './Page.css';
 
 export interface IPage
 {
     currentPage: Tabs;
     language: Languages;
+    isMobile: boolean;
 }
 
 export default function Page(props: IPage) {
@@ -28,7 +30,7 @@ export default function Page(props: IPage) {
     }
 
     return (
-        <div> 
+        <div className='page'> 
             {selectPage()}
         </div>
     )
