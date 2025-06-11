@@ -17,15 +17,15 @@ export default function Page(props: IPage) {
     function selectPage() {
         switch(props.currentPage) {
             case Tabs.Home:
-                return <Home/>;
+                return <Home language={props.language}/>;
             case Tabs.Portfolio:
-                return <Portfolio/>;
+                return <Portfolio language={props.language}/>;
             case Tabs.Commission:
-                return <Commission/>;
+                return <Commission language={props.language}/>;
             case Tabs.Contact:
-                return <Contact/>;
+                return <Contact language={props.language}/>;
             default:
-                return <Home/>;
+                return <Home language={props.language}/>;
         }
     }
 

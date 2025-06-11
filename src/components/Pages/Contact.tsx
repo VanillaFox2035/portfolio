@@ -1,11 +1,11 @@
 import type { Languages } from "../../define/Types"
-import { Translator } from "../../i18n/Translator"
+import { Translator as t } from "../../i18n/Translator"
 
-export interface ICommission {
+export interface IContact {
     language: Languages
 }
 
-export default function Contact() {
+export default function Contact(props: IContact) {
     return (
         <div>
             Contact

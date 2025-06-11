@@ -1,11 +1,11 @@
 import type { Languages } from "../../define/Types"
-import { Translator } from "../../i18n/Translator"
+import { Translator as t } from "../../i18n/Translator"
 
-export interface ICommission {
+export interface IPortfolio {
     language: Languages
 }
 
-export default function Portfolio() {
+export default function Portfolio(props: IPortfolio) {
     return (
         <div>
             Portfolio
