@@ -1,5 +1,7 @@
 import type { Languages } from "../../define/Types"
 import { Translator as t } from "../../i18n/Translator"
+import './../Page.css';
+import './Contact.css';
 
 export interface IContact {
     language: Languages;
@@ -8,8 +10,11 @@ export interface IContact {
 
 export default function Contact(props: IContact) {
     return (
-        <div>
-            Contact
+    <>
+        <h2 className="content-center">{t('contact', props.language)}</h2>
+        <div className="panel">
+            
         </div>
+    </>
     )
 }

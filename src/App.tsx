@@ -46,6 +46,7 @@ function App() {
     let language = langDictionary[query];
     if (!language) language = Languages.En;
     params.set('lang', translateToString(language, langDictionary));
+    console.log('Change language:', translateToString(language, langDictionary));
     updateUrlParams();
     setLanguage(language);
   }

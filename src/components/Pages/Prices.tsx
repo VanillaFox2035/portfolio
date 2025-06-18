@@ -1,22 +1,21 @@
 import type { Languages } from "../../define/Types";
 import { Translator as t} from "../../i18n/Translator";
 import './../Page.css';
-import './Commission.css';
+import './Prices.css';
 import CommissionStatus from "./CommissionStatus";
 
-export interface ICommission {
+export interface IPrices {
     language: Languages;
     isMobile: boolean;
 }
 
-export default function Commission(props: ICommission) {
+export default function Prices(props: IPrices) {
     return (
         <>
-            <CommissionStatus language={props.language} isMobile={props.isMobile}/>
+                <CommissionStatus language={props.language} isMobile={props.isMobile}/>
             <div className="panel">
-                <h2 className="content">Commission</h2>
+                <h2 className="content">Prices</h2>
             </div>
         </>
-        
     )
 }
