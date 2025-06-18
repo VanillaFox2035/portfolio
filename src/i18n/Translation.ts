@@ -29,7 +29,7 @@ export const en = {
     // Commission
     'commission-status': 'Commission status',
     // Contact
-    'contact': '[ Contact ]',
+    'contact': 'Contact',
 };
 
 export const cht = {
@@ -62,5 +62,5 @@ export const cht = {
     // Commission
     'commission-status': '委託狀態',
     // Contact
-    'contact': '[ 聯絡方式 ]',
+    'contact': '聯絡方式',
 };
