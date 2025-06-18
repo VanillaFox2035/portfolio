@@ -12,7 +12,7 @@ export interface IPrices {
 export default function Prices(props: IPrices) {
     return (
         <>
-                <CommissionStatus language={props.language} isMobile={props.isMobile}/>
+            <CommissionStatus language={props.language} isMobile={props.isMobile}/>
             <div className="panel">
                 <h2 className="content">Prices</h2>
             </div>

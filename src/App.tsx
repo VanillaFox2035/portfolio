@@ -94,13 +94,13 @@ function App() {
         <>
           <div className='header'>
             <img className='header-hamburger' src='/icon/Hamburger.svg' onClick={() => {setIsMenuOpen(true)}}/>
-            <img className='header-logo-center' src="/icon/Logo.png"/>
+            <img className='header-logo-center' src="/icon/logo.png"/>
           </div>
           <hr/>
           <Page currentPage={tab} language={language} isMobile={isMobile} changeTab={setTab}/>
           {isMenuOpen && <div className='hamburger-menu'>
             <br/>
-            <img className='hamburger-menu-close' src='/icon/X-Symbol.svg' onClick={() => setIsMenuOpen(false)}/>
+            <img className='hamburger-menu-close' src='/icon/button-x.svg' onClick={() => setIsMenuOpen(false)}/>
             <h2>{t('navigate', language)}</h2>
             {getNavigationButtons(false)}
             <br/>
@@ -119,7 +119,7 @@ function App() {
         // Desktop Layout
         <>
           <div className='header'>
-            <img className='header-logo' src="/icon/Logo.png" onClick={() => {changeTab(Tabs.Home)}}/>
+            <img className='header-logo' src="/icon/logo.png" onClick={() => {changeTab(Tabs.Home)}}/>
             {getNavigationButtons(true)}
             <img className='header-item-flag' src={t('language-icon', language)}/>
             <select className='header-language-select' onChange={(e) => {
