@@ -45,18 +45,19 @@ function App() {
   function onChangeLanguage(query: string) {
     let language = langDictionary[query];
     if (!language) language = Languages.En;
-    setLanguage(language);
     params.set('lang', translateToString(language, langDictionary));
     updateUrlParams();
+    setLanguage(language);
   }
 
   function changeTab(query: Tabs) {
     let tab = query;
     if (!tab) tab = Tabs.Home;
+    params.set('tab', translateToString(tab, tabDictionary));
+    console.log('Change tab:', translateToString(tab, tabDictionary));
+    updateUrlParams();
     setTab(tab);
     setIsMenuOpen(false);
-    params.set('tab', translateToString(tab, tabDictionary));
-    updateUrlParams();
   }
 
   function translateToString(query: any, dictionary: Object): string {
@@ -95,7 +96,7 @@ function App() {
             <img className='header-logo-center' src="/icon/Logo.png"/>
           </div>
           <hr/>
-          <Page currentPage={tab} language={language} isMobile={isMobile} setTab={setTab}/>
+          <Page currentPage={tab} language={language} isMobile={isMobile} changeTab={setTab}/>
           {isMenuOpen && <div className='hamburger-menu'>
             <br/>
             <img className='hamburger-menu-close' src='/icon/X-Symbol.svg' onClick={() => setIsMenuOpen(false)}/>
@@ -128,7 +129,7 @@ function App() {
             </select>
           </div>
           <hr/>
-          <Page currentPage={tab} language={language} isMobile={isMobile} setTab={setTab}/>
+          <Page currentPage={tab} language={language} isMobile={isMobile} changeTab={changeTab}/>
         </>
       }
     </>

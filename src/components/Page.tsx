@@ -11,7 +11,7 @@ export interface IPage
     currentPage: Tabs;
     language: Languages;
     isMobile: boolean;
-    setTab: Function;
+    changeTab: Function;
 }
 
 export default function Page(props: IPage) {
@@ -27,7 +27,7 @@ export default function Page(props: IPage) {
             case Tabs.Prices:
                 return <Prices language={props.language} isMobile={props.isMobile}/>
             default:
-                return <Home language={props.language} isMobile={props.isMobile} setTab={props.setTab}/>;
+                return <Home language={props.language} isMobile={props.isMobile} changeTab={props.changeTab}/>;
         }
     }
 

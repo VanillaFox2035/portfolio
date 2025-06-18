@@ -55,8 +55,10 @@
   font-size: 1.2em;
   font-weight: 600;
   padding: 0.7em;
-  padding-bottom: 0em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
   cursor: pointer;
+  align-self: flex-end;
 }
 .header-item:hover {
   text-decoration: underline;
@@ -65,9 +67,11 @@
   font-size: 1.2em;
   font-weight: 600;
   padding: 0.7em;
-  padding-bottom: 0em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
   margin-left: auto;
   cursor: pointer;
+  align-self: flex-end;
 }
 .header-push-right:hover {
   text-decoration: underline;
@@ -75,8 +79,9 @@
 .header-item-flag {
   margin-left: 1.5em;
   margin-top: 0.5em;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
 }
 .header-hamburger {
   position: absolute;
@@ -90,5 +95,6 @@
   border-style: none;
   font-size: 1.2em;
   padding-left: 0;
-  margin: 0;
+  margin: 0.2em;
+  align-self: flex-end;
 }

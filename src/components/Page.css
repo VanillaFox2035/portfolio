@@ -11,3 +11,46 @@
     display: flex;
     justify-content: left;
 }
+
+.panel {
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 5px;
+    max-width: 550px;
+}
+.content {
+    text-align: left;
+    width: fit-content;
+}
+.content-center {
+    text-align: center;
+}
+.content-left-pad {
+    padding-left: 0.3em;
+}
+
+.content-icon {
+    text-align: left;
+    color:burlywood;
+    margin-right: 0.5em;
+    width: fit-content;
+}
+.content-icon-center {
+    text-align: center;
+    color:burlywood;
+    margin-right: 0.5em;
+}
+.platform-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0.5em;
+    margin-top: 0em;
+}
+.ps {
+    color: darkgray;
+    margin-top: 1em;
+}

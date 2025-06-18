@@ -7,7 +7,7 @@ import "./Home.css";
 export interface IHome {
     language: Languages;
     isMobile: boolean;
-    setTab: Function;
+    changeTab: Function;
 }
 
 export default function Home(props: IHome) {
@@ -21,18 +21,18 @@ export default function Home(props: IHome) {
             <div>
                 <h2 className={props.isMobile? "home-profile-name-center": "home-profile-name"}>香草狐狸 | Vanilla Fox</h2>
                 <a href={twitterLink}>
-                    <h4 className={props.isMobile? "home-content-center" : "home-content"}>@VanillaFox2035</h4>
+                    <h4 className={props.isMobile? "content-center" : "content"}>@VanillaFox2035</h4>
                 </a>
-                <h4 className={props.isMobile? "home-content-icon-center" : "home-content-icon"}>✦ ✦ ✦</h4>
-                <h4 className={props.isMobile? "home-content-center" : "home-content"}>{t("illustration-artist", props.language)}</h4>
-                <h4 className={props.isMobile? "home-content-center" : "home-content"}>{t("english-and-chinese", props.language)}</h4>
+                <h4 className={props.isMobile? "content-icon-center" : "content-icon"}>✦ ✦ ✦</h4>
+                <h4 className={props.isMobile? "content-center" : "content"}>{t("illustration-artist", props.language)}</h4>
+                <h4 className={props.isMobile? "content-center" : "content"}>{t("english-and-chinese", props.language)}</h4>
             </div>
         </>;
     }
 
     return (
         <>
-            <div className="home-panel">
+            <div className="panel">
                 {props.isMobile? 
                     // Mobile Profile
                     <>
@@ -47,49 +47,49 @@ export default function Home(props: IHome) {
                     </div>
                 }
             </div>
-            <div className="home-panel">
-                <h2 className="home-content">{t('what-i-do', props.language)}</h2>
+            <div className="panel">
+                <h2 className="content">{t('what-i-do', props.language)}</h2>
                 <div className="flex-container-left">
-                    <div className="home-content-icon">✦</div>
-                    <div className="home-content">{t("art-style", props.language)}</div>
+                    <div className="content-icon">✦</div>
+                    <div className="content">{t("art-style", props.language)}</div>
                 </div>
                 <div className="flex-container-left">
-                    <div className="home-content-icon">✦</div>
-                    <div className="home-content">{t("female-preferred", props.language)}</div>
+                    <div className="content-icon">✦</div>
+                    <div className="content">{t("female-preferred", props.language)}</div>
                 </div>
                 <div className="flex-container-left">
-                    <div className="home-content-icon">✦</div>
-                    <div className="home-content">{t("fanart-and-oc", props.language)}</div>
+                    <div className="content-icon">✦</div>
+                    <div className="content">{t("fanart-and-oc", props.language)}</div>
                 </div>
                 <div className="flex-container-left">
-                    <div className="home-content-icon">✦</div>
-                    <div className="home-content">
+                    <div className="content-icon">✦</div>
+                    <div className="content">
                         {t("artwork-link", props.language)}
-                        <a onClick={() => {props.setTab(Tabs.Portfolio)}}>{t("portfolio-link", props.language)}</a>
+                        <a onClick={() => {props.changeTab(Tabs.Portfolio)}}>{t("portfolio-link", props.language)}</a>
                         {t("or", props.language)}
                         <a href={pixivLink}>{t("pixiv-link", props.language)}</a>
                     </div>
                 </div>
             </div>
-            <div className="home-panel">
-                <h2 className="home-content">{t('platforms', props.language)}</h2>
+            <div className="panel">
+                <h2 className="content">{t('platforms', props.language)}</h2>
                 <div className="flex-container-left">
-                    <a href={twitterLink}><img className="home-platform-icon" src="/icon/icon-x.png"/></a>
-                    <a className="home-content" href={twitterLink}>@VanillaFox2035</a>
-                    <h4 className="home-content-left-pad">{t('english', props.language)}</h4>
+                    <a href={twitterLink}><img className="platform-icon" src="/icon/icon-x.png"/></a>
+                    <a className="content" href={twitterLink}>@VanillaFox2035</a>
+                    <h4 className="content-left-pad">{t('english', props.language)}</h4>
                 </div>
                 <div className="flex-container-left">
-                    <a href={pixivLink}><img className="home-platform-icon" src="/icon/icon-pixiv.png"/></a>
-                    <a className="home-content" href={pixivLink}>@15478244</a>
-                    <h4 className="home-content-left-pad">{t('english', props.language)}</h4>
+                    <a href={pixivLink}><img className="platform-icon" src="/icon/icon-pixiv.png"/></a>
+                    <a className="content" href={pixivLink}>@15478244</a>
+                    <h4 className="content-left-pad">{t('english', props.language)}</h4>
                 </div>
                 <div className="flex-container-left">
-                    <a href={facebookLink}><img className="home-platform-icon" src="/icon/icon-facebook.png"/></a>
-                    <a className="home-content" href={facebookLink}>@Kitsune2035</a>
-                    <h4 className="home-content-left-pad">{t('chinese', props.language)}</h4>
+                    <a href={facebookLink}><img className="platform-icon" src="/icon/icon-facebook.png"/></a>
+                    <a className="content" href={facebookLink}>@Kitsune2035</a>
+                    <h4 className="content-left-pad">{t('chinese', props.language)}</h4>
                 </div>
             </div>
-            <div className="home-ps">
+            <div className="ps">
                 {t('written-by-me', props.language)}
             </div>
         </>

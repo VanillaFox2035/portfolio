@@ -1,9 +1,9 @@
 .home-profile-img {
     width: 150px;
     height: 150px;
-    padding-right: 1em;
+    margin-right: 1em;
+    border-radius: 10px;
 }
-
 .home-profile-name {
     text-align: left;
     margin-bottom: 0em;
@@ -11,48 +11,4 @@
 .home-profile-name-center {
     text-align: center;
     margin-bottom: 0em;
-}
-
-.home-panel {
-    margin: auto;
-    margin-top: 1em;
-    padding: 1em;
-    border-style: dashed;
-    border-width: 1px;
-    border-color: lightgray;
-    border-radius: 5px;
-    max-width: 550px;
-}
-
-.home-content {
-    text-align: left;
-    width: fit-content;
-}
-.home-content-center {
-    text-align: center;
-}
-.home-content-left-pad {
-    padding-left: 0.3em;
-}
-
-.home-content-icon {
-    text-align: left;
-    color:burlywood;
-    margin-right: 0.5em;
-    width: fit-content;
-}
-.home-content-icon-center {
-    text-align: center;
-    color:burlywood;
-    margin-right: 0.5em;
-}
-.home-platform-icon {
-    width: 25px;
-    height: 25px;
-    margin: 0.5em;
-    margin-top: 0em;
-}
-.home-ps {
-    color: darkgray;
-    margin-top: 1em;
 }
