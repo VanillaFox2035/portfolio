@@ -27,7 +27,8 @@ export const en = {
     // Portfolio
     // WIP...
     // Commission
-    'commission-status': 'Commission status',
+    'commission-open': 'Commission Open',
+    'commission-closed': 'Commission Closed',
     // Contact
     'contact': 'Contact',
 };
@@ -60,7 +61,8 @@ export const cht = {
     // Portfolio
     // WIP...
     // Commission
-    'commission-status': '委託狀態',
+    'commission-open': '開放委託',
+    'commission-closed': '關閉委託',
     // Contact
     'contact': '聯絡方式',
 };

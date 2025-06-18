@@ -105,11 +105,11 @@ function App() {
             {getNavigationButtons(false)}
             <br/>
             <h2>{t('language', language)}</h2>
-            <div className='hamburger-menu-language-option' onClick={() => {setLanguage(Languages.En)}}>
+            <div className='hamburger-menu-language-option' onClick={() => {onChangeLanguage('en')}}>
               <img src={t('language-icon', Languages.En)}/>
               <div className='header-item'>English</div>
             </div>
-            <div className='hamburger-menu-language-option' onClick={() => {setLanguage(Languages.Cht)}}>
+            <div className='hamburger-menu-language-option' onClick={() => {onChangeLanguage('cht')}}>
               <img src={t('language-icon', Languages.Cht)}/>
               <div className='header-item'>繁體中文</div>
             </div>

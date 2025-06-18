@@ -10,19 +10,19 @@ export interface ICommissionStatus {
 
 export default function CommissionStatus(props: ICommissionStatus) {
     const isOpen = false;
-    const statusDescription = "Working on other things...";
+    const statusDescription = null;
     return (
         <div className="panel">
             {
                 isOpen ? 
                 <>
                     <img className="commission-status-icon" src="/icon/circle-check.svg"></img>
-                    <h2 className="commission-status-open-text">Commission Open</h2>
+                    <h2 className="commission-status-open-text">{t('commission-open', props.language)}</h2>
                 </>
                 :
                 <>
                     <img className="commission-status-icon" src="/icon/circle-x.svg"></img>
-                    <h2 className="commission-status-closed-text">Commission Closed</h2>
+                    <h2 className="commission-status-closed-text">{t('commission-closed', props.language)}</h2>
                 </>
             }
             {
