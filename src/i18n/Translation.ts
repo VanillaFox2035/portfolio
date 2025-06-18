@@ -11,7 +11,7 @@ export const en = {
     // Home
     'illustration-artist': 'Software engineer & Illustration artist',
     'taiwan': 'Taiwan',
-    'english-and-chinese': 'English & Chinese',
+    'english-and-chinese': 'Speaks English & Chinese',
     'what-i-do': 'What I do',
     'art-style': 'Anime style art',
     'female-preferred': 'Female characters preferred',
@@ -21,9 +21,9 @@ export const en = {
     'or': 'or',
     'pixiv-link': ' [Pixiv] ',
     'platforms': 'Platforms',
-    'twitter-link-desc': '@VanillaFox2035 | English',
-    'pixiv-link-desc': '@VanillaFox2035 | English',
-    'facebook-link-desc': '@VanillaFox2035 | Chinese',
+    'english': '| English',
+    'chinese': '| Chinese',
+    'written-by-me': 'And yes, this website is coded by myself ❤︎',
     // Portfolio
     // WIP...
     // Commission
@@ -54,9 +54,9 @@ export const cht = {
     'or': '或',
     'pixiv-link': '[Pixiv]',
     'platforms': '常用平台',
-    'twitter-link-desc': '@VanillaFox2035 | 英文',
-    'pixiv-link-desc': '@VanillaFox2035 | 英文',
-    'facebook-link-desc': '@VanillaFox2035 | 中文',
+    'english': '| 英文',
+    'chinese': '| 中文',
+    'written-by-me': '沒錯，這網站是我自己寫的喔 ❤︎',
     // Portfolio
     // WIP...
     // Commission

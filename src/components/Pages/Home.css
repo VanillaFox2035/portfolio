@@ -31,6 +31,9 @@
 .home-content-center {
     text-align: center;
 }
+.home-content-left-pad {
+    padding-left: 0.3em;
+}
 
 .home-content-icon {
     text-align: left;
@@ -42,4 +45,14 @@
     text-align: center;
     color:burlywood;
     margin-right: 0.5em;
+}
+.home-platform-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0.5em;
+    margin-top: 0em;
+}
+.home-ps {
+    color: darkgray;
+    margin-top: 1em;
 }
