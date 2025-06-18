@@ -10,36 +10,11 @@ function App() {
   const [language, setLanguage] = useState<Languages>(Languages.En);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  function onWindowSizeChange() {
-    setWidth(window.innerWidth);
-  }
-  useEffect(() => {
-    window.addEventListener('resize', onWindowSizeChange);
-    // Read url parameters
-    const query = window.location.search;
-    const params = new URLSearchParams(query);
-    const tabQuery: string = params.get('tab');
-    const langQuery: string = params.get('lang');
-    onChangeLanguage(langQuery);
-    changeTab(tabDictionary[tabQuery], false);
-
-    return () => {
-      window.removeEventListener('resize', onWindowSizeChange);
-    }
-  }, []);
-  const isMobile = width <= 768;
-
+  // Dictionaries
   const langDictionary = {
     'en': Languages.En,
     'cht': Languages.Cht,
   };
-
-  function onChangeLanguage(query: string) {
-    let language = langDictionary[query];
-    if (!language) language = Languages.En;
-    setLanguage(language);
-  }
-
   const tabDictionary = {
     'home': Tabs.Home,
     'portfolio': Tabs.Portfolio,
@@ -48,11 +23,53 @@ function App() {
     'contact': Tabs.Contact
   };
 
-  function changeTab(query: Tabs, refreshParam = true) {
+  // Read url parameters
+  const query = window.location.search;
+  const params = new URLSearchParams(query);
+
+  function onWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener('resize', onWindowSizeChange);
+    const tabQuery: string = params.get('tab');
+    const langQuery: string = params.get('lang');
+    onChangeLanguage(langQuery);
+    changeTab(tabDictionary[tabQuery]);
+    return () => {
+      window.removeEventListener('resize', onWindowSizeChange);
+    }
+  }, []);
+  const isMobile = width <= 768;
+
+  function onChangeLanguage(query: string) {
+    let language = langDictionary[query];
+    if (!language) language = Languages.En;
+    setLanguage(language);
+    params.set('lang', query);
+    updateUrlParams();
+  }
+
+  function changeTab(query: Tabs) {
     let tab = query;
     if (!tab) tab = Tabs.Home;
     setTab(tab);
     setIsMenuOpen(false);
+    params.set('tab', translateToString(tab, tabDictionary));
+    updateUrlParams();
+  }
+
+  function translateToString(query: any, dictionary: Object): string {
+    for (const key in dictionary) {
+      if (dictionary[key] === query) {
+        return key;
+      }
+    }
+    return '';
+  }
+
+  function updateUrlParams() {
+    window.history.pushState({}, "", "?" + params.toString());
   }
 
   function getNavigationButtons(isToTheRight: boolean) {
