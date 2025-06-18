@@ -32,14 +32,19 @@ function App() {
     }
   }
 
+  function changeTab(tab: Tabs) {
+    setTab(tab);
+    setIsMenuOpen(false);
+  }
+
   function getNavigationButtons(isToTheRight: boolean) {
     return (
       <>
-        <div className={isToTheRight? 'header-push-right' : 'header-item'} onClick={() => {setTab(Tabs.Home); setIsMenuOpen(false);}}>{t('header-home', language)}</div>
-        <div className='header-item' onClick={() => {setTab(Tabs.Portfolio); setIsMenuOpen(false);}}>{t('header-portfolio', language)}</div>
-        <div className='header-item' onClick={() => {setTab(Tabs.Commission); setIsMenuOpen(false);}}>{t('header-commission', language)}</div>
-        <div className='header-item' onClick={() => {setTab(Tabs.Prices); setIsMenuOpen(false);}}>{t('header-prices', language)}</div>
-        <div className='header-item' onClick={() => {setTab(Tabs.Contact); setIsMenuOpen(false);}}>{t('header-contact', language)}</div>
+        <div className={isToTheRight? 'header-push-right' : 'header-item'} onClick={() => {changeTab(Tabs.Home)}}>{t('header-home', language)}</div>
+        <div className='header-item' onClick={() => {changeTab(Tabs.Portfolio)}}>{t('header-portfolio', language)}</div>
+        <div className='header-item' onClick={() => {changeTab(Tabs.Commission)}}>{t('header-commission', language)}</div>
+        <div className='header-item' onClick={() => {changeTab(Tabs.Prices)}}>{t('header-prices', language)}</div>
+        <div className='header-item' onClick={() => {changeTab(Tabs.Contact)}}>{t('header-contact', language)}</div>
       </>
     );
   }
@@ -52,7 +57,7 @@ function App() {
         <>
           <div className='header'>
             <img className='header-hamburger' src='/icon/Hamburger.svg' onClick={() => {setIsMenuOpen(true)}}/>
-            <img className='header-logo-center' src="/icon/Logo.png" onClick={() => {setTab(Tabs.Home)}}/>
+            <img className='header-logo-center' src="/icon/Logo.png"/>
           </div>
           <hr/>
           <Page currentPage={tab} language={language} isMobile={isMobile} setTab={setTab}/>
@@ -77,7 +82,7 @@ function App() {
         // Desktop Layout
         <>
           <div className='header'>
-            <img className='header-logo' src="/icon/Logo.png" onClick={() => {setTab(Tabs.Home)}}/>
+            <img className='header-logo' src="/icon/Logo.png" onClick={() => {changeTab(Tabs.Home)}}/>
             {getNavigationButtons(true)}
             <img className='header-item-flag' src={t('language-icon', language)}/>
             <select className='header-language-select' onChange={(e) => {

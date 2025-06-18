@@ -49,19 +49,19 @@ export default function Home(props: IHome) {
             </div>
             <div className="home-panel">
                 <h2 className="home-content">{t('what-i-do', props.language)}</h2>
-                <h4 className="flex-container-left">
+                <div className="flex-container-left">
                     <div className="home-content-icon">✦</div>
                     <div className="home-content">{t("art-style", props.language)}</div>
-                </h4>
-                <h4 className="flex-container-left">
+                </div>
+                <div className="flex-container-left">
                     <div className="home-content-icon">✦</div>
                     <div className="home-content">{t("female-preferred", props.language)}</div>
-                </h4>
-                <h4 className="flex-container-left">
+                </div>
+                <div className="flex-container-left">
                     <div className="home-content-icon">✦</div>
                     <div className="home-content">{t("fanart-and-oc", props.language)}</div>
-                </h4>
-                <h4 className="flex-container-left">
+                </div>
+                <div className="flex-container-left">
                     <div className="home-content-icon">✦</div>
                     <div className="home-content">
                         {t("artwork-link", props.language)}
@@ -69,25 +69,25 @@ export default function Home(props: IHome) {
                         {t("or", props.language)}
                         <a href={pixivLink}>{t("pixiv-link", props.language)}</a>
                     </div>
-                </h4>
+                </div>
             </div>
             <div className="home-panel">
                 <h2 className="home-content">{t('platforms', props.language)}</h2>
-                <h4 className="flex-container-left">
+                <div className="flex-container-left">
                     <a href={twitterLink}><img className="home-platform-icon" src="/icon/icon-x.png"/></a>
                     <a className="home-content" href={twitterLink}>@VanillaFox2035</a>
                     <h4 className="home-content-left-pad">{t('english', props.language)}</h4>
-                </h4>
-                <h4 className="flex-container-left">
+                </div>
+                <div className="flex-container-left">
                     <a href={pixivLink}><img className="home-platform-icon" src="/icon/icon-pixiv.png"/></a>
                     <a className="home-content" href={pixivLink}>@15478244</a>
                     <h4 className="home-content-left-pad">{t('english', props.language)}</h4>
-                </h4>
-                <h4 className="flex-container-left">
+                </div>
+                <div className="flex-container-left">
                     <a href={facebookLink}><img className="home-platform-icon" src="/icon/icon-facebook.png"/></a>
                     <a className="home-content" href={facebookLink}>@Kitsune2035</a>
                     <h4 className="home-content-left-pad">{t('chinese', props.language)}</h4>
-                </h4>
+                </div>
             </div>
             <div className="home-ps">
                 {t('written-by-me', props.language)}
