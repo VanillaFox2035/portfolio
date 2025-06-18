@@ -23,9 +23,6 @@ function App() {
 
   function onChangeLanguage(language: string) {
     switch(language) {
-      case 'en':
-        setLanguage(Languages.En);
-        break;
       case 'cht':
         setLanguage(Languages.Cht);
         break;
@@ -38,10 +35,10 @@ function App() {
   function getNavigationButtons(isToTheRight: boolean) {
     return (
       <>
-        <div className={isToTheRight? 'header-push-right' : 'header-item'} onClick={() => {setTab(Tabs.Home)}}>{t('header-home', language)}</div>
-        <div className='header-item' onClick={() => {setTab(Tabs.Portfolio)}}>{t('header-portfolio', language)}</div>
-        <div className='header-item' onClick={() => {setTab(Tabs.Commission)}}>{t('header-commission', language)}</div>
-        <div className='header-item' onClick={() => {setTab(Tabs.Contact)}}>{t('header-contact', language)}</div>
+        <div className={isToTheRight? 'header-push-right' : 'header-item'} onClick={() => {setTab(Tabs.Home); setIsMenuOpen(false);}}>{t('header-home', language)}</div>
+        <div className='header-item' onClick={() => {setTab(Tabs.Portfolio); setIsMenuOpen(false);}}>{t('header-portfolio', language)}</div>
+        <div className='header-item' onClick={() => {setTab(Tabs.Commission); setIsMenuOpen(false);}}>{t('header-commission', language)}</div>
+        <div className='header-item' onClick={() => {setTab(Tabs.Contact); setIsMenuOpen(false);}}>{t('header-contact', language)}</div>
       </>
     );
   }
@@ -56,7 +53,7 @@ function App() {
             <img className='header-hamburger' src='/icon/Hamburger.svg' onClick={() => {setIsMenuOpen(true)}}/>
             <div className='header-item-center' >VanillaFox</div>
           </div>
-          <Page currentPage={tab} language={language} isMobile={isMobile}/>
+          <Page currentPage={tab} language={language} isMobile={isMobile} setTab={setTab}/>
           {isMenuOpen && <div className='hamburger-menu'>
             <br/>
             <img className='hamburger-menu-close' src='/icon/X-Symbol.svg' onClick={() => setIsMenuOpen(false)}/>
@@ -88,7 +85,7 @@ function App() {
                 <option value='cht'>繁體中文</option>
             </select>
           </div>
-          <Page currentPage={tab} language={language} isMobile={isMobile}/>
+          <Page currentPage={tab} language={language} isMobile={isMobile} setTab={setTab}/>
         </>
       }
     </>

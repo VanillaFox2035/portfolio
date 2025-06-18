@@ -2,11 +2,12 @@
     
 }
 
-.panel {
-    margin: 0.5em;
-    padding: 1em;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
-    border-radius: 5px;
+.flex-container-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container-left {
+    display: flex;
+    justify-content: left;
 }

@@ -2,7 +2,8 @@ import type { Languages } from "../../define/Types"
 import { Translator as t } from "../../i18n/Translator"
 
 export interface IPortfolio {
-    language: Languages
+    language: Languages;
+    isMobile: boolean;
 }
 
 export default function Portfolio(props: IPortfolio) {

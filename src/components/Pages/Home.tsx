@@ -1,21 +1,68 @@
 import type { Languages } from "../../define/Types";
 import { Translator as t} from "../../i18n/Translator";
+import { Tabs } from "../../define/Types";
 import "./../Page.css";
+import "./Home.css";
 
 export interface IHome {
-    language: Languages
+    language: Languages;
+    isMobile: boolean;
+    setTab: Function;
 }
 
 export default function Home(props: IHome) {
     return (
         <>
-            <div className="panel">
-                <h2>香草狐狸 | Vanilla Fox</h2>
+            <div className="home-panel">
+                {props.isMobile? 
+                    // Mobile Profile
+                    <>
+                        <img className="home-profile-img" src="/icon/IRyS-profile.png"/>
+                        <h2>香草狐狸 | Vanilla Fox</h2>
+                        <a href="https://x.com/VanillaFox2035" className="home-content-at-center">@VanillaFox2035</a>
+                        <h4>✦✦✦</h4>
+                        <h4>{t("illustration-artist", props.language)}</h4>
+                        <h4>{t("english-and-chinese", props.language)}</h4>
+                    </>
+                    :
+                    // Desktop Profile
+                    <div className="flex-container-center">
+                        <img className="home-profile-img" src="/icon/IRyS-profile.png"/>
+                        <div>
+                            <h2 className="home-content">香草狐狸 | Vanilla Fox</h2>
+                            <a href="https://x.com/VanillaFox2035" className="home-content-at-left">@VanillaFox2035</a>
+                            <h4 className="home-content">✦✦✦</h4>
+                            <h4 className="home-content">{t("illustration-artist", props.language)}</h4>
+                            <h4 className="home-content">{t("english-and-chinese", props.language)}</h4>
+                        </div>
+                    </div>
+                }
             </div>
-            <div className="panel">
+            <div className="home-panel">
                 <h2>{t('what-i-do', props.language)}</h2>
+                <h4 className="flex-container-left">
+                    <div className="home-content-icon">✦</div>
+                    <div className="home-content">{t("art-style", props.language)}</div>
+                </h4>
+                <h4 className="flex-container-left">
+                    <div className="home-content-icon">✦</div>
+                    <div className="home-content">{t("female-preferred", props.language)}</div>
+                </h4>
+                <h4 className="flex-container-left">
+                    <div className="home-content-icon">✦</div>
+                    <div className="home-content">{t("fanart-and-oc", props.language)}</div>
+                </h4>
+                <h4 className="flex-container-left">
+                    <div className="home-content-icon">✦</div>
+                    <div className="home-content">
+                        {t("artwork-link", props.language)}
+                        <a onClick={() => {props.setTab(Tabs.Portfolio)}}>{t("portfolio-link", props.language)}</a>
+                        {t("or", props.language)}
+                        <a href="https://www.pixiv.net/users/15478244">{t("pixiv-link", props.language)}</a>
+                    </div>
+                </h4>
             </div>
-            <div className="panel">
+            <div className="home-panel">
                 <h2>{t('platforms', props.language)}</h2>
             </div>
         </>

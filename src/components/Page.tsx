@@ -10,22 +10,21 @@ export interface IPage
     currentPage: Tabs;
     language: Languages;
     isMobile: boolean;
+    setTab: Function;
 }
 
 export default function Page(props: IPage) {
 
     function selectPage() {
         switch(props.currentPage) {
-            case Tabs.Home:
-                return <Home language={props.language}/>;
             case Tabs.Portfolio:
-                return <Portfolio language={props.language}/>;
+                return <Portfolio language={props.language} isMobile={props.isMobile}/>;
             case Tabs.Commission:
-                return <Commission language={props.language}/>;
+                return <Commission language={props.language} isMobile={props.isMobile}/>;
             case Tabs.Contact:
-                return <Contact language={props.language}/>;
+                return <Contact language={props.language} isMobile={props.isMobile}/>;
             default:
-                return <Home language={props.language}/>;
+                return <Home language={props.language} isMobile={props.isMobile} setTab={props.setTab}/>;
         }
     }
 
