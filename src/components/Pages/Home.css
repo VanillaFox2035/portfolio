@@ -1,40 +1,45 @@
 .home-profile-img {
     width: 150px;
     height: 150px;
-    margin-left: 1em;
-    margin-right: 1em;
+    padding-right: 1em;
+}
+
+.home-profile-name {
+    text-align: left;
+    margin-bottom: 0em;
+}
+.home-profile-name-center {
+    text-align: center;
+    margin-bottom: 0em;
 }
 
 .home-panel {
     margin: auto;
     margin-top: 1em;
     padding: 1em;
-    border-style: solid;
+    border-style: dashed;
     border-width: 1px;
-    border-color: gray;
+    border-color: lightgray;
     border-radius: 5px;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .home-content {
+    text-align: left;
     width: fit-content;
-    text-align: left;
 }
-
-.home-content-at-left {
-    color:dodgerblue;
-    font-size: large;
-    text-align: left;
-}
-
-.home-content-at-center {
-    color:dodgerblue;
-    font-size: large;
+.home-content-center {
     text-align: center;
 }
 
 .home-content-icon {
+    text-align: left;
+    color:burlywood;
     margin-right: 0.5em;
     width: fit-content;
-    text-align: left;
+}
+.home-content-icon-center {
+    text-align: center;
+    color:burlywood;
+    margin-right: 0.5em;
 }

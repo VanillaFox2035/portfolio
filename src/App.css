@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -42,26 +42,44 @@
 .header {
   display: flex;
 }
+.header-logo {
+  width: 150px;
+  height: 50px;
+}
+.header-logo-center {
+  width: 150px;
+  height: 50px;
+  margin: auto;
+}
 .header-item {
   font-size: 1.2em;
-  padding: 0.3em;
-  padding-left: 1em;
-  padding-right: 1em;
+  font-weight: 600;
+  padding: 0.7em;
+  padding-bottom: 0em;
   cursor: pointer;
+}
+.header-item:hover {
+  text-decoration: underline;
 }
 .header-push-right {
   font-size: 1.2em;
-  padding: 0.3em;
-  padding-left: 1em;
-  padding-right: 1em;
+  font-weight: 600;
+  padding: 0.7em;
+  padding-bottom: 0em;
   margin-left: auto;
   cursor: pointer;
 }
+.header-push-right:hover {
+  text-decoration: underline;
+}
 .header-item-flag {
   margin-left: 1.5em;
+  margin-top: 0.5em;
   width: 40px;
+  height: 40px;
 }
 .header-hamburger {
+  position: absolute;
   width: 60px;
   height: 60px;
   cursor: pointer;

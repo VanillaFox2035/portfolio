@@ -38,6 +38,7 @@ function App() {
         <div className={isToTheRight? 'header-push-right' : 'header-item'} onClick={() => {setTab(Tabs.Home); setIsMenuOpen(false);}}>{t('header-home', language)}</div>
         <div className='header-item' onClick={() => {setTab(Tabs.Portfolio); setIsMenuOpen(false);}}>{t('header-portfolio', language)}</div>
         <div className='header-item' onClick={() => {setTab(Tabs.Commission); setIsMenuOpen(false);}}>{t('header-commission', language)}</div>
+        <div className='header-item' onClick={() => {setTab(Tabs.Prices); setIsMenuOpen(false);}}>{t('header-prices', language)}</div>
         <div className='header-item' onClick={() => {setTab(Tabs.Contact); setIsMenuOpen(false);}}>{t('header-contact', language)}</div>
       </>
     );
@@ -51,8 +52,9 @@ function App() {
         <>
           <div className='header'>
             <img className='header-hamburger' src='/icon/Hamburger.svg' onClick={() => {setIsMenuOpen(true)}}/>
-            <div className='header-item-center' >VanillaFox</div>
+            <img className='header-logo-center' src="/icon/Logo.png" onClick={() => {setTab(Tabs.Home)}}/>
           </div>
+          <hr/>
           <Page currentPage={tab} language={language} isMobile={isMobile} setTab={setTab}/>
           {isMenuOpen && <div className='hamburger-menu'>
             <br/>
@@ -75,7 +77,7 @@ function App() {
         // Desktop Layout
         <>
           <div className='header'>
-            <div className='header-item' onClick={() => {setTab(Tabs.Home)}}>VanillaFox</div>
+            <img className='header-logo' src="/icon/Logo.png" onClick={() => {setTab(Tabs.Home)}}/>
             {getNavigationButtons(true)}
             <img className='header-item-flag' src={t('language-icon', language)}/>
             <select className='header-language-select' onChange={(e) => {
@@ -85,6 +87,7 @@ function App() {
                 <option value='cht'>繁體中文</option>
             </select>
           </div>
+          <hr/>
           <Page currentPage={tab} language={language} isMobile={isMobile} setTab={setTab}/>
         </>
       }

@@ -1,5 +1,5 @@
-import type { Languages } from "../../define/Types"
-import { Translator as t} from "../../i18n/Translator"
+import type { Languages } from "../../define/Types";
+import { Translator as t} from "../../i18n/Translator";
 
 export interface ICommission {
     language: Languages;
