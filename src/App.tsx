@@ -15,24 +15,42 @@ function App() {
   }
   useEffect(() => {
     window.addEventListener('resize', onWindowSizeChange);
+    // Read url parameters
+    const query = window.location.search;
+    const params = new URLSearchParams(query);
+    const tabQuery: string = params.get('tab');
+    const langQuery: string = params.get('lang');
+    onChangeLanguage(langQuery);
+    changeTab(tabDictionary[tabQuery], false);
+
     return () => {
       window.removeEventListener('resize', onWindowSizeChange);
     }
   }, []);
   const isMobile = width <= 768;
 
-  function onChangeLanguage(language: string) {
-    switch(language) {
-      case 'cht':
-        setLanguage(Languages.Cht);
-        break;
-      default:
-        setLanguage(Languages.En);
-        break;
-    }
+  const langDictionary = {
+    'en': Languages.En,
+    'cht': Languages.Cht,
+  };
+
+  function onChangeLanguage(query: string) {
+    let language = langDictionary[query];
+    if (!language) language = Languages.En;
+    setLanguage(language);
   }
 
-  function changeTab(tab: Tabs) {
+  const tabDictionary = {
+    'home': Tabs.Home,
+    'portfolio': Tabs.Portfolio,
+    'commission': Tabs.Commission,
+    'prices':Tabs.Prices,
+    'contact': Tabs.Contact
+  };
+
+  function changeTab(query: Tabs, refreshParam = true) {
+    let tab = query;
+    if (!tab) tab = Tabs.Home;
     setTab(tab);
     setIsMenuOpen(false);
   }
