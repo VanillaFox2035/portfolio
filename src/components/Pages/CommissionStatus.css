@@ -1,0 +1,19 @@
+.commission-status-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 0.5em;
+}
+
+.commission-status-open-text {
+    color: rgb(108, 200, 100);
+}
+
+.commission-status-closed-text {
+    color: rgb(194, 194, 194);
+}
+
+.commission-status-description {
+    padding-top: 1em;
+    font-weight: 300;
+    color: gray;
+}

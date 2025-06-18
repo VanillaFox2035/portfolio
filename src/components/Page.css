@@ -47,8 +47,8 @@
 .platform-icon {
     width: 25px;
     height: 25px;
-    margin: 0.5em;
-    margin-top: 0em;
+    margin: 0em;
+    padding-right: 0.4em;
 }
 .ps {
     color: darkgray;

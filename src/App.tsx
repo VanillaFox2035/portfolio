@@ -93,7 +93,7 @@ function App() {
         // Mobile Layout
         <>
           <div className='header'>
-            <img className='header-hamburger' src='/icon/Hamburger.svg' onClick={() => {setIsMenuOpen(true)}}/>
+            <img className='header-hamburger' src='/icon/hamburger.svg' onClick={() => {setIsMenuOpen(true)}}/>
             <img className='header-logo-center' src="/icon/logo.png"/>
           </div>
           <hr/>
