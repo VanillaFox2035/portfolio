@@ -10,6 +10,8 @@ function App() {
   const [tab, setTab] = useState<Tabs>(Tabs.Home)
   const [language, setLanguage] = useState<Languages>(Languages.En);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [imageUrl, setImageUrl] = useState('');
+  const [isImageViewerOpen, setIsImageViewerOpen] = useState(false);
 
   // Read url parameters
   const query = window.location.search;
@@ -52,6 +54,11 @@ function App() {
     setIsMenuOpen(false);
   }
 
+  function viewImage(url: string) {
+    setImageUrl(url);
+    setIsImageViewerOpen(true);
+  }
+
   function updateUrlParams() {
     window.history.pushState({}, "", "?" + params.toString());
   }
@@ -79,7 +86,7 @@ function App() {
             <img className='header-logo-center' src="/icon/logo.png"/>
           </div>
           <hr/>
-          <Page currentPage={tab} language={language} isMobile={isMobile} changeTab={setTab}/>
+          <Page currentPage={tab} language={language} isMobile={isMobile} changeTab={setTab} viewImage={viewImage}/>
           {isMenuOpen && <div className='hamburger-menu'>
             <br/>
             <img className='hamburger-menu-close' src='/icon/button-x.svg' onClick={() => setIsMenuOpen(false)}/>
@@ -114,8 +121,15 @@ function App() {
             </select>
           </div>
           <hr/>
-          <Page currentPage={tab} language={language} isMobile={isMobile} changeTab={changeTab}/>
+          <Page currentPage={tab} language={language} isMobile={isMobile} changeTab={changeTab} viewImage={viewImage}/>
         </>
+      }
+      {
+        // Image viewer
+        isImageViewerOpen &&
+        <div className='image-viewer-background' onClick={() => {setIsImageViewerOpen(false)}}>
+          <img className='image-viewer-image' src={imageUrl}/>
+        </div>
       }
     </>
   )

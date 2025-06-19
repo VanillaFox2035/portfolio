@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { langDictionary, Languages } from "../../define/Types";
-import { translateToString, fetchJson } from "../../define/Tools";
-import { Translator as t} from "../../i18n/Translator";
-import './../Page.css';
+import { langDictionary, Languages } from "../define/Types";
+import { translateToString, fetchJson } from "../define/Tools";
+import { Translator as t} from "../i18n/Translator";
+import './Page.css';
 import './CommissionStatus.css';
 
 export interface ICommissionStatus {

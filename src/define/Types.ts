@@ -13,11 +13,3 @@ export const tabDictionary = {
     'prices':Tabs.Prices,
     'contact': Tabs.Contact
 };
-export function translateToString(query: any, dictionary: Object): string {
-  for (const key in dictionary) {
-    if (dictionary[key] === query) {
-      return key;
-    }
-  }
-  return '';
-}

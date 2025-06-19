@@ -6,6 +6,7 @@ import './Portfolio.css';
 export interface IPortfolio {
     language: Languages;
     isMobile: boolean;
+    viewImage: Function;
 }
 
 export default function Portfolio(props: IPortfolio) {

@@ -2,13 +2,14 @@ import { langDictionary, type Languages } from "../../define/Types";
 import { Translator as t} from "../../i18n/Translator";
 import './../Page.css';
 import './Prices.css';
-import CommissionStatus from "./CommissionStatus";
+import CommissionStatus from "./../CommissionStatus";
 import { useEffect, useState } from "react";
 import { fetchJson, translateToString } from "../../define/Tools";
 
 export interface IPrices {
     language: Languages;
     isMobile: boolean;
+    viewImage: Function;
 }
 
 export default function Prices(props: IPrices) {
@@ -43,7 +44,7 @@ export default function Prices(props: IPrices) {
                         prices['shelf'].map((item, index) => 
                             <div className="panel" key={"prices-item-" + index.toString()}>
                                 <div className="flex-container-left">
-                                    <img className={props.isMobile ? "prices-thumbnail" : "prices-thumbnail-large"} src={item['thumbnail']}/>
+                                    <img className={props.isMobile ? "prices-thumbnail" : "prices-thumbnail-large"} src={item['thumbnail']} onClick={() => {props.viewImage(item['full-image'])}}/>
                                     <div className="content">
                                         <div className="flex-container-left">
                                             <h3 className="content">{item['item-name'][translateToString(props.language, langDictionary)]}</h3>

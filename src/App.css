@@ -104,3 +104,24 @@
 .header-commission-closed {
   align-self: flex-end;
 }
+
+.image-viewer-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 3;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.1s;
+}
+.image-viewer-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

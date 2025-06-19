@@ -2,7 +2,7 @@ import type { Languages } from "../../define/Types";
 import { Translator as t} from "../../i18n/Translator";
 import './../Page.css';
 import './Commission.css';
-import CommissionStatus from "./CommissionStatus";
+import CommissionStatus from "./../CommissionStatus";
 
 export interface ICommission {
     language: Languages;
