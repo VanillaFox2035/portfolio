@@ -21,9 +21,9 @@
   animation-duration: 0.1s;
 }
 .hamburger-menu-close {
-  display: block;
-  margin-left: auto;
-  margin-right: 30px;
+  position: fixed;
+  top: 2em;
+  right: 2em;
   width: 25px;
   height: 25px;
   cursor: pointer;
@@ -119,6 +119,14 @@
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 0.1s;
+}
+.image-viewer-close {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
 .image-viewer-image {
   height: 100%;

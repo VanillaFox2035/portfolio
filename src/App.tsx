@@ -128,7 +128,8 @@ function App() {
         // Image viewer
         isImageViewerOpen &&
         <div className='image-viewer-background' onClick={() => {setIsImageViewerOpen(false)}}>
-          <img className='image-viewer-image' src={imageUrl}/>
+          <img className='image-viewer-close' src='/icon/button-x.svg' onClick={() => setIsMenuOpen(false)}/>
+          <img className='image-viewer-image' src={imageUrl} onClick={() => {setIsImageViewerOpen(false)}}/>
         </div>
       }
     </>
