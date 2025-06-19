@@ -19,7 +19,7 @@
     border-style: dashed;
     border-width: 1px;
     border-color: lightgray;
-    border-radius: 5px;
+    border-radius: 10px;
     max-width: 550px;
 }
 .content {
