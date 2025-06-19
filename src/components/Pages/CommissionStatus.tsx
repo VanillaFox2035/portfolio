@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { langDictionary, translateToString, type Languages } from "../../define/Types";
+import { langDictionary, Languages } from "../../define/Types";
+import { translateToString, fetchJson } from "../../define/Tools";
 import { Translator as t} from "../../i18n/Translator";
 import './../Page.css';
 import './CommissionStatus.css';
@@ -10,36 +11,17 @@ export interface ICommissionStatus {
 }
 
 export default function CommissionStatus(props: ICommissionStatus) {
+    // Use dropbox to store status json files
     const commissionStatusUrl = "https://dl.dropboxusercontent.com/scl/fi/z3vpyfcqwyfg5kuwdi2fw/CommissionStatus.json?rlkey=9czot91664v5qt74z5n3jodwf&st=xuti5s4s&dl=0";
 
     const [isLoading, setIsLoading] = useState(true);
     const [isCommissionOpen, setIsCommissionOpen] = useState(false);
     const [description, setDescription] = useState({});
 
-    function fetchJson(url: string): Promise<object> {
-        return new Promise<object>((resolve, reject) => {
-            // Fetc from url
-            fetch(url)
-            .then((response) => {
-                // Read json
-                response.json()
-                .then((json) => {
-                    resolve(json);
-                })
-                .catch((e) => {
-                    reject(e);
-                });
-            })
-            .catch((e) => {
-                reject(e);
-            })
-        });
-    }
-
     useEffect(() => {
         fetchJson(commissionStatusUrl)
         .then((json) => {
-            setIsCommissionOpen(json['isOpen']);
+            setIsCommissionOpen(json['is-commission-open']);
             const desc = json['description'];
             setDescription(desc);
             setIsLoading(false);

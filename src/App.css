@@ -98,3 +98,9 @@
   margin: 0.2em;
   align-self: flex-end;
 }
+.header-commission-open {
+  align-self: flex-end;
+}
+.header-commission-closed {
+  align-self: flex-end;
+}

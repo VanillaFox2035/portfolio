@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { Languages, Tabs, langDictionary, tabDictionary, translateToString } from './define/Types';
+import { Languages, Tabs, langDictionary, tabDictionary } from './define/Types';
+import { translateToString } from './define/Tools';
 import Page from './components/Page';
 import { Translator as t }from './i18n/Translator';
 
@@ -18,7 +19,9 @@ function App() {
     setWidth(window.innerWidth);
   }
   useEffect(() => {
+    // On resize window register
     window.addEventListener('resize', onWindowSizeChange);
+    // Setting language and tab from url parameters
     const tabQuery: string = params.get('tab');
     const langQuery: string = params.get('lang');
     onChangeLanguage(langQuery);
@@ -102,7 +105,7 @@ function App() {
             <img className='header-logo' src="/icon/logo.png" onClick={() => {changeTab(Tabs.Home)}}/>
             {getNavigationButtons(true)}
             <img className='header-item-flag' src={t('language-icon', language)}/>
-            <select className='header-language-select' onChange={(e) => {
+            <select className='header-language-select' value={translateToString(language, langDictionary)} onChange={(e) => {
                 onChangeLanguage(e.target.value);
             }}>
                 <option value='en'>English</option>
