@@ -35,7 +35,7 @@ export default function CommissionStatus(props: ICommissionStatus) {
     }, []);
 
     return (
-        <div className="panel">
+        <div className={isCommissionOpen ? "commission-status-panel-open" : "commission-status-panel-closed"}>
             {
                 isLoadingFailed ?
                 <h3 className="commission-status-description">Load commission status failed!</h3>

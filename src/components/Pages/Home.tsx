@@ -32,7 +32,7 @@ export default function Home(props: IHome) {
 
     return (
         <>
-            <div className="panel">
+            <div className="home-panel">
                 {props.isMobile? 
                     // Mobile Profile
                     <>
@@ -47,7 +47,7 @@ export default function Home(props: IHome) {
                     </div>
                 }
             </div>
-            <div className="panel">
+            <div className="home-panel">
                 <h3 className="content">{t('what-i-do', props.language)}</h3>
                 <div className="flex-container-left">
                     <div className="content-icon">✦</div>
@@ -71,7 +71,7 @@ export default function Home(props: IHome) {
                     </div>
                 </div>
             </div>
-            <div className="panel">
+            <div className="home-panel">
                 <h3 className="content">{t('platforms', props.language)}</h3>
                 <div className="flex-container-left">
                     <a href={twitterLink}><img className="platform-icon" src="/icon/icon-x.png"/></a>

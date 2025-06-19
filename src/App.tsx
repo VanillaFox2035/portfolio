@@ -38,7 +38,6 @@ function App() {
     let language = langDictionary[query];
     if (!language) language = Languages.En;
     params.set('lang', translateToString(language, langDictionary));
-    console.log('Change language:', translateToString(language, langDictionary));
     updateUrlParams();
     setLanguage(language);
     setIsMenuOpen(false);
@@ -48,7 +47,6 @@ function App() {
     let tab = query;
     if (!tab) tab = Tabs.Home;
     params.set('tab', translateToString(tab, tabDictionary));
-    console.log('Change tab:', translateToString(tab, tabDictionary));
     updateUrlParams();
     setTab(tab);
     setIsMenuOpen(false);

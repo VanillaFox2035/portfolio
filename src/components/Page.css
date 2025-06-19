@@ -1,6 +1,7 @@
 .page {
-    padding-top: 3.5em;
-    margin: 0.5em;
+    padding-top: 4em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 .flex-container-center {
@@ -19,9 +20,9 @@
     padding: 0.7em;
     border-style: dashed;
     border-width: 1px;
-    border-color: lightgray;
+    border-color: darkgray;
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 750px;
 }
 .content {
     text-align: left;

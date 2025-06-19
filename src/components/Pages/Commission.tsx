@@ -17,6 +17,7 @@ export default function Commission(props: ICommission) {
             <CommissionStatus language={props.language} isMobile={props.isMobile}/>
             <br/>
             <h2 className="content-center">{t('header-commission', props.language)}</h2>
+            
             <div className="panel">
                 
             </div>
