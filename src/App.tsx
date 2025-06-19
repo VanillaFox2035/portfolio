@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { Languages, Tabs } from './define/Types';
+import { Languages, Tabs, langDictionary, tabDictionary, translateToString } from './define/Types';
 import Page from './components/Page';
 import { Translator as t }from './i18n/Translator';
 
@@ -9,19 +9,6 @@ function App() {
   const [tab, setTab] = useState<Tabs>(Tabs.Home)
   const [language, setLanguage] = useState<Languages>(Languages.En);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // Dictionaries
-  const langDictionary = {
-    'en': Languages.En,
-    'cht': Languages.Cht,
-  };
-  const tabDictionary = {
-    'home': Tabs.Home,
-    'portfolio': Tabs.Portfolio,
-    'commission': Tabs.Commission,
-    'prices':Tabs.Prices,
-    'contact': Tabs.Contact
-  };
 
   // Read url parameters
   const query = window.location.search;
@@ -61,15 +48,6 @@ function App() {
     setIsMenuOpen(false);
   }
 
-  function translateToString(query: any, dictionary: Object): string {
-    for (const key in dictionary) {
-      if (dictionary[key] === query) {
-        return key;
-      }
-    }
-    return '';
-  }
-
   function updateUrlParams() {
     window.history.pushState({}, "", "?" + params.toString());
   }
@@ -101,6 +79,8 @@ function App() {
           {isMenuOpen && <div className='hamburger-menu'>
             <br/>
             <img className='hamburger-menu-close' src='/icon/button-x.svg' onClick={() => setIsMenuOpen(false)}/>
+            <br/>
+            <br/>
             <h2>{t('navigate', language)}</h2>
             {getNavigationButtons(false)}
             <br/>
