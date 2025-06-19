@@ -41,22 +41,26 @@
 
 .header {
   display: flex;
-  max-width: 1080px;
   top: 0;
-  position: fixed;
-  width: 100%;
-  margin: 0em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   padding: 0em;
-  background-color: rgb(245, 245, 245);
+  max-width: 1080px;
 }
 .header-background {
-  margin: auto;
+  position: fixed;
+  background-color: rgb(240, 240, 240);
+  top: 0;
+  width: 100%;
 }
 .header-logo {
+  padding: 0.5em;
   width: 150px;
   height: 50px;
 }
 .header-logo-center {
+  padding: 0.5em;
   width: 150px;
   height: 50px;
   margin: auto;
@@ -94,7 +98,7 @@
   align-self: flex-end;
 }
 .header-hamburger {
-  position: absolute;
+  position: fixed;
   width: 60px;
   height: 60px;
   cursor: pointer;

@@ -85,6 +85,7 @@ function App() {
           <div className='header'>
             <img className='header-hamburger' src='/icon/hamburger.svg' onClick={() => {setIsMenuOpen(true)}}/>
             <img className='header-logo-center' src="/icon/logo.png"/>
+            
           </div>
         </div>
           <Page currentPage={tab} language={language} isMobile={isMobile} changeTab={setTab} viewImage={viewImage}/>
