@@ -16,6 +16,7 @@ export default function CommissionStatus(props: ICommissionStatus) {
 
     const [isLoading, setIsLoading] = useState(true);
     const [isCommissionOpen, setIsCommissionOpen] = useState(false);
+    const [isLoadingFailed, setIsLoadingFailed] = useState(false);
     const [description, setDescription] = useState({});
 
     useEffect(() => {
@@ -28,6 +29,7 @@ export default function CommissionStatus(props: ICommissionStatus) {
         })
         .catch((e) => {
             console.error(`Loading commission status failed! ${e}`);
+            setIsLoadingFailed(true);
         });
         return () => {}
     }, []);
@@ -35,6 +37,9 @@ export default function CommissionStatus(props: ICommissionStatus) {
     return (
         <div className="panel">
             {
+                isLoadingFailed ?
+                <h3 className="commission-status-description">Load commission status failed!</h3>
+                :
                 isLoading ? 
                 <h3 className="commission-status-description">Loading...</h3>
                 :

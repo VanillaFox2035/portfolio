@@ -15,6 +15,7 @@ export interface IPrices {
 export default function Prices(props: IPrices) {
     const pricesUrl = "https://dl.dropboxusercontent.com/scl/fi/yz2ipyhteyul2tdor75vd/Prices.json?rlkey=h7f6z3o4iq4hs67khg37j7s72&st=wwkw1byd&dl=0";
     const [isLoadingPrices, setIsLoadingPrices] = useState(true);
+    const [isLoadingFailed, setIsLoadingFailed] = useState(false);
     const [prices, setPrices] = useState({});
 
     useEffect(() => {
@@ -26,6 +27,7 @@ export default function Prices(props: IPrices) {
         })
         .catch((e) => {
             console.error(`Loading prices failed! ${e}`);
+            setIsLoadingFailed(true);
         });
         return () => {}
     }, []);
@@ -36,6 +38,9 @@ export default function Prices(props: IPrices) {
             <br/>
             <h2 className="content-center">{t('header-prices', props.language)}</h2>
                 {
+                    isLoadingFailed ?
+                    <h4 className="prices-description">Load prices failed!</h4>
+                    :
                     isLoadingPrices ?
                     <h4 className="prices-description">Loading...</h4>
                     :

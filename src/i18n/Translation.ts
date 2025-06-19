@@ -23,7 +23,7 @@ export const en = {
     'platforms': 'Platforms',
     'english': '| English',
     'chinese': '| Chinese',
-    'written-by-me': 'And yes, this website was coded by myself ♡',
+    'written-by-me': 'And yes, this website was coded by myself☆',
     // Portfolio
     // WIP...
     // Commission
@@ -57,7 +57,7 @@ export const cht = {
     'platforms': '常用平台',
     'english': '| 英文',
     'chinese': '| 中文',
-    'written-by-me': '沒錯，這網站是我自己寫的喔 ♡',
+    'written-by-me': '沒錯，這網站是我自己寫的喔☆',
     // Portfolio
     // WIP...
     // Commission
