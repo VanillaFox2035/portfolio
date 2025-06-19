@@ -32,7 +32,7 @@ function App() {
       window.removeEventListener('resize', onWindowSizeChange);
     }
   }, []);
-  const isMobile = width <= 768;
+  const isMobile = width <= 800;
 
   function onChangeLanguage(query: string) {
     let language = langDictionary[query];
@@ -81,11 +81,12 @@ function App() {
       isMobile ? 
         // Mobile Layout
         <>
+        <div className='header-background'>
           <div className='header'>
             <img className='header-hamburger' src='/icon/hamburger.svg' onClick={() => {setIsMenuOpen(true)}}/>
             <img className='header-logo-center' src="/icon/logo.png"/>
           </div>
-          <hr/>
+        </div>
           <Page currentPage={tab} language={language} isMobile={isMobile} changeTab={setTab} viewImage={viewImage}/>
           {isMenuOpen && <div className='hamburger-menu'>
             <br/>
@@ -109,6 +110,7 @@ function App() {
       : 
         // Desktop Layout
         <>
+        <div className='header-background'>
           <div className='header'>
             <img className='header-logo' src="/icon/logo.png" onClick={() => {changeTab(Tabs.Home)}}/>
             {getNavigationButtons(true)}
@@ -120,8 +122,8 @@ function App() {
                 <option value='cht'>繁體中文</option>
             </select>
           </div>
-          <hr/>
-          <Page currentPage={tab} language={language} isMobile={isMobile} changeTab={changeTab} viewImage={viewImage}/>
+        </div>
+        <Page currentPage={tab} language={language} isMobile={isMobile} changeTab={changeTab} viewImage={viewImage}/>
         </>
       }
       {
