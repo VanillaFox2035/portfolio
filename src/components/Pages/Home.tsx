@@ -12,6 +12,7 @@ export interface IHome {
 
 export default function Home(props: IHome) {
 
+    const showcaseImageLink = "https://dl.dropboxusercontent.com/scl/fi/5h7fra14p67n0b93we5lu/2025_0617_irys_92.jpg?rlkey=2qgo24hkri5aqz7wyktlbh4hb&st=xbd9r1lc&dl=0";
     const twitterLink = "https://x.com/VanillaFox2035";
     const pixivLink = "https://www.pixiv.net/users/15478244";
     const facebookLink = "https://www.facebook.com/Kitsune2035";
@@ -32,6 +33,8 @@ export default function Home(props: IHome) {
 
     return (
         <>
+            <img className="home-showcase-image" src={showcaseImageLink}/>
+            <div className="content-center">✦ ✦ ✦ ✦ ✦</div>
             <div className="home-panel">
                 {props.isMobile? 
                     // Mobile Profile

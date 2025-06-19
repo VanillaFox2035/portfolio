@@ -14,7 +14,8 @@
 }
 .home-panel {
     margin: auto;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
     padding: 0.7em;
     padding-left: 1.5em;
     border-style: dashed;
@@ -22,4 +23,10 @@
     border-color: darkgray;
     border-radius: 10px;
     max-width: 500px;
+}
+
+.home-showcase-image {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1080px;
 }
