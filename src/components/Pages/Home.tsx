@@ -89,6 +89,9 @@ export default function Home(props: IHome) {
                     <h4 className="content-left-pad">{t('chinese', props.language)}</h4>
                 </div>
             </div>
+            <h4 className="ps">
+                {t('written-by-me', props.language)}
+            </h4>
         </>
     );
 }
