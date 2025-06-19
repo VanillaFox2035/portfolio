@@ -39,6 +39,7 @@ function App() {
     console.log('Change language:', translateToString(language, langDictionary));
     updateUrlParams();
     setLanguage(language);
+    setIsMenuOpen(false);
   }
 
   function changeTab(query: Tabs) {

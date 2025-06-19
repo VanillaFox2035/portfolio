@@ -15,7 +15,7 @@
 .panel {
     margin: auto;
     margin-top: 1em;
-    padding: 1em;
+    padding: 0.7em;
     border-style: dashed;
     border-width: 1px;
     border-color: lightgray;
@@ -36,13 +36,13 @@
 .content-icon {
     text-align: left;
     color:burlywood;
-    margin-right: 0.5em;
+    margin-right: 0.3em;
     width: fit-content;
 }
 .content-icon-center {
     text-align: center;
     color:burlywood;
-    margin-right: 0.5em;
+    margin-right: 0.3em;
 }
 .platform-icon {
     width: 25px;

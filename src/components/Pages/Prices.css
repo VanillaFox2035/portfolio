@@ -1,0 +1,26 @@
+.prices-description {
+    font-weight: 300;
+    color: gray;
+}
+
+.prices-thumbnail {
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    height: 150px;
+    margin-right: 0.9em;
+}
+
+.prices-thumbnail-large {
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    height: 250px;
+    margin-right: 1em;
+}
+
+.prices-item-description {
+    color: gray;
+}

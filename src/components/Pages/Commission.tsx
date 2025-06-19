@@ -10,11 +10,15 @@ export interface ICommission {
 }
 
 export default function Commission(props: ICommission) {
+
+
     return (
         <>
             <CommissionStatus language={props.language} isMobile={props.isMobile}/>
+            <br/>
+            <h2 className="content-center">{t('header-commission', props.language)}</h2>
             <div className="panel">
-                <h2 className="content">Commission</h2>
+                
             </div>
         </>
         

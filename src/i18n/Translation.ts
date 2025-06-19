@@ -6,8 +6,8 @@ export const en = {
     'header-prices': 'Prices',
     'header-contact': 'Contact',
     'language-icon': 'https://flagsapi.com/GB/flat/32.png',
-    'navigate': '[ Navigate ]',
-    'language': '[ Language ]',
+    'navigate': 'Navigate',
+    'language': 'Language',
     // Home
     'illustration-artist': 'Software engineer & Illustration artist',
     'taiwan': 'Taiwan',
@@ -41,8 +41,8 @@ export const cht = {
     'header-prices': '價目表',
     'header-contact': '聯絡方式',
     'language-icon': 'https://flagsapi.com/TW/flat/32.png',
-    'navigate': '[ 瀏覽 ]',
-    'language': '[ 語言 ]',
+    'navigate': '瀏覽',
+    'language': '語言',
     // Home
     'illustration-artist': '軟體工程師 & 業餘插畫家',
     'english-and-chinese': '中英文皆可通',

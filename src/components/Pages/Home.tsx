@@ -21,7 +21,7 @@ export default function Home(props: IHome) {
             <div>
                 <h2 className={props.isMobile? "home-profile-name-center": "home-profile-name"}>香草狐狸 | Vanilla Fox</h2>
                 <a href={twitterLink}>
-                    <h4 className={props.isMobile? "content-center" : "content"}>@VanillaFox2035</h4>
+                    <h3 className={props.isMobile? "content-center" : "content"}>@VanillaFox2035</h3>
                 </a>
                 <h4 className={props.isMobile? "content-icon-center" : "content-icon"}>✦ ✦ ✦</h4>
                 <h4 className={props.isMobile? "content-center" : "content"}>{t("illustration-artist", props.language)}</h4>
@@ -48,7 +48,7 @@ export default function Home(props: IHome) {
                 }
             </div>
             <div className="panel">
-                <h2 className="content">{t('what-i-do', props.language)}</h2>
+                <h3 className="content">{t('what-i-do', props.language)}</h3>
                 <div className="flex-container-left">
                     <div className="content-icon">✦</div>
                     <div className="content">{t("art-style", props.language)}</div>
@@ -72,7 +72,7 @@ export default function Home(props: IHome) {
                 </div>
             </div>
             <div className="panel">
-                <h2 className="content">{t('platforms', props.language)}</h2>
+                <h3 className="content">{t('platforms', props.language)}</h3>
                 <div className="flex-container-left">
                     <a href={twitterLink}><img className="platform-icon" src="/icon/icon-x.png"/></a>
                     <a className="content" href={twitterLink}>@VanillaFox2035</a>

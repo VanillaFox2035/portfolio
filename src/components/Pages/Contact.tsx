@@ -11,6 +11,7 @@ export interface IContact {
 export default function Contact(props: IContact) {
     return (
     <>
+        <br/>
         <h2 className="content-center">{t('contact', props.language)}</h2>
         <div className="panel">
             

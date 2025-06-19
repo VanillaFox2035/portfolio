@@ -10,8 +10,12 @@ export interface IPortfolio {
 
 export default function Portfolio(props: IPortfolio) {
     return (
-        <div className="panel">
-            <h2 className="content">Portfolio</h2>
-        </div>
+        <>
+            <br/>
+            <h2 className="content-center">{t('header-portfolio', props.language)}</h2>
+            <div className="panel">
+            
+            </div>
+        </>
     )
 }
