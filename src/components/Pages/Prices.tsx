@@ -13,14 +13,14 @@ export interface IPrices {
 }
 
 export default function Prices(props: IPrices) {
-    const pricesUrl = "https://dl.dropboxusercontent.com/scl/fi/yz2ipyhteyul2tdor75vd/Prices.json?rlkey=h7f6z3o4iq4hs67khg37j7s72&st=wwkw1byd&dl=0";
+    const commissionStatusUrl = "https://dl.dropboxusercontent.com/scl/fi/z3vpyfcqwyfg5kuwdi2fw/CommissionStatus.json?rlkey=9czot91664v5qt74z5n3jodwf&st=xuti5s4s&dl=0";
     const [isLoadingPrices, setIsLoadingPrices] = useState(true);
     const [isLoadingFailed, setIsLoadingFailed] = useState(false);
     const [prices, setPrices] = useState({});
 
     useEffect(() => {
         // Read prices
-        fetchJson(pricesUrl)
+        fetchJson(commissionStatusUrl)
         .then((json) => {
             setPrices(json);
             setIsLoadingPrices(false);
@@ -34,7 +34,6 @@ export default function Prices(props: IPrices) {
 
     return (
         <>
-            <CommissionStatus language={props.language} isMobile={props.isMobile}/>
             <br/>
             <h2 className="content-center">{t('header-prices', props.language)}</h2>
                 {
@@ -51,7 +50,10 @@ export default function Prices(props: IPrices) {
                                 <div className="flex-container-left">
                                     <img className={props.isMobile ? "prices-thumbnail" : "prices-thumbnail-large"} src={item['thumbnail']} onClick={() => {props.viewImage(item['full-image'])}}/>
                                     <div className="content">
-                                        <div className="flex-container-left">
+                                        <div className="flex-container-left-center">
+                                            <h4 className={prices['commission-status']['is-open'] && item['is-open'] ? 'prices-item-open' : 'prices-item-closed'}>
+                                                {prices['commission-status']['is-open'] && item['is-open'] ? t('open', props.language) : t('closed', props.language)}
+                                            </h4>
                                             <h3 className="content">{item['item-name'][translateToString(props.language, langDictionary)]}</h3>
                                         </div>
                                         <div className="flex-container-left">

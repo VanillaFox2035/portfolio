@@ -24,11 +24,12 @@ export const en = {
     'english': '| English',
     'chinese': '| Chinese',
     'written-by-me': 'And yes, this website was coded by myself☆',
-    // Portfolio
-    // WIP...
     // Commission
     'commission-open': 'Commission Open',
     'commission-closed': 'Commission Closed',
+    // Prices
+    'open': 'Open',
+    'closed': 'Closed',
     // Contact
     'contact': 'Contact',
 };
@@ -58,11 +59,12 @@ export const cht = {
     'english': '| 英文',
     'chinese': '| 中文',
     'written-by-me': '沒錯，這網站是我自己寫的喔☆',
-    // Portfolio
-    // WIP...
     // Commission
     'commission-open': '開放委託',
     'commission-closed': '關閉委託',
+    // Prices
+    'open': '開放中',
+    'closed': '未開放',
     // Contact
     'contact': '聯絡方式',
 };

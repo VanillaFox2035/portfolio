@@ -26,3 +26,31 @@
 .prices-item-description {
     color: darkgray;
 }
+
+.prices-item-open {
+    font-size: small;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 20px;
+    padding: 2px 0;
+    margin: 0px;
+    margin-right: 0.4em;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(108, 200, 100);
+}
+
+.prices-item-closed {
+    font-size: small;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 20px;
+    padding: 2px 0;
+    margin: 0px;
+    margin-right: 0.4em;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(194, 194, 194);
+}

@@ -22,9 +22,9 @@ export default function CommissionStatus(props: ICommissionStatus) {
     useEffect(() => {
         fetchJson(commissionStatusUrl)
         .then((json) => {
-            setIsCommissionOpen(json['is-commission-open']);
-            const desc = json['description'];
-            setDescription(desc);
+            setIsCommissionOpen(json['commission-status']['is-open']);
+            const status = json['commission-status']['status'];
+            setDescription(status);
             setIsLoading(false);
         })
         .catch((e) => {
