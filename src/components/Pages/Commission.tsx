@@ -21,6 +21,61 @@ export default function Commission(props: ICommission) {
             <h2 className="content-center">{t('header-commission', props.language)}</h2>
             <div className="panel">
                 <h3 className="content">{t('procedure', props.language)}</h3>
+                <div className="commission-procedure-panel">
+                    <div className="flex-container-left">
+                        <div className="content-icon">✦</div>
+                        <h4 className="commission-content-likable">{t('negotiation', props.language)}</h4>
+                    </div>     
+                    <h4 className="content">{t('negotiation-desc', props.language)}</h4>
+                </div>
+                <h2 className="commission-arrow">⇩</h2>
+                <div className="commission-procedure-panel">
+                    <div className="flex-container-left">
+                        <div className="content-icon">✦</div>
+                        <h4 className="commission-content-likable">{t('deposit', props.language)}</h4>
+                    </div>    
+                    <h4 className="content">{t('deposit-desc', props.language)}</h4>
+                </div>
+                <h2 className="commission-arrow">⇩</h2>
+                <div className="commission-procedure-panel">
+                    <div className="flex-container-left">
+                        <div className="content-icon">✦</div>
+                        <h4 className="commission-content-likable">{t('sketching', props.language)}</h4>
+                    </div>    
+                    <h4 className="content">
+                        {t('sketching-desc-1', props.language)}
+                        <span className="commission-content-emphasis">{t('revision-number', props.language)}</span>
+                        {t('sketching-desc-2', props.language)}
+                    </h4>
+                </div>
+                <h2 className="commission-arrow">⇩</h2>
+                <div className="commission-procedure-panel">
+                    <div className="flex-container-left">
+                        <div className="content-icon">✦</div>
+                        <h4 className="commission-content-likable">{t('final-payment', props.language)}</h4>
+                    </div>    
+                    <h4 className="content">{t('final-payment-desc', props.language)}</h4>
+                </div>
+                <h2 className="commission-arrow">⇩</h2>
+                <div className="commission-procedure-panel">
+                    <div className="flex-container-left">
+                        <div className="content-icon">✦</div>
+                        <h4 className="commission-content-likable">{t('completion', props.language)}</h4>
+                    </div>    
+                    <h4 className="content">
+                        {t('completion-desc-1', props.language)}
+                        <span className="commission-content-emphasis">{t('revision-number', props.language)}</span>
+                        {t('completion-desc-2', props.language)}
+                    </h4>
+                </div>
+                <h2 className="commission-arrow">⇩</h2>
+                <div className="commission-procedure-panel">
+                    <div className="flex-container-left">
+                        <div className="content-icon">✦</div>
+                        <h4 className="commission-content-likable">{t('deliver-files', props.language)}</h4>
+                    </div>    
+                    <h4 className="content">{t('deliver-files-desc', props.language)}</h4>
+                </div>
             </div>
             <div className="panel">
                 <h3 className="content">{t('how-to-request', props.language)}</h3>
@@ -57,8 +112,11 @@ export default function Commission(props: ICommission) {
                                 t(likable + "-items", props.language).map((item, itemIndex) => 
                                    <div className="flex-container-left" key={'accepted-contents-' + likableIndex.toString() + '-item-' + itemIndex.toString()}>
                                         <div className="content-icon">✦</div>
-                                        <h4 className="content"  key={`accepted-contents-${likableIndex}-item-${itemIndex}`}>{item}</h4>
-                                        <h4 className="content"></h4>
+                                        <h4 className={likableIndex === 3 && itemIndex === 1 ? "commission-revealer" : "content"}  key={`accepted-contents-${likableIndex}-item-${itemIndex}`}>{item}</h4>
+                                        {
+                                            likableIndex === 3 && itemIndex === 1 &&
+                                            <h4 className="commission-hidden">{t('with-exceptions', props.language)}</h4>
+                                        }
                                     </div>
                                 )
                         }

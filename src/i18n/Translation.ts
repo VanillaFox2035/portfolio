@@ -75,7 +75,7 @@ export const en = {
     'refused': 'Refused',
     'refused-desc': 'Will be turned down',
     'refused-items': ['Extreme violence or gore', 'Hardcore fetishes', 'Realistic art style', 'Politics or controversial topics'],
-    'with-exceptions': '(With exceptions)',
+    'with-exceptions': ' (With exceptions)',
     // [Revisions]
     'revisions': 'Revisions',
     'check-in-on-client': 'The artist will check in with the client after completing the sketches and after completing the whole artwork.',
