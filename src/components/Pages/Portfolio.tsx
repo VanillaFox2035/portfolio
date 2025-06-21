@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { Languages } from "../../define/Types";
+import { links, type Languages } from "../../define/Types";
 import { Translator as t } from "../../i18n/Translator";
 import './../Page.css';
 import './Portfolio.css';
@@ -12,9 +12,9 @@ export interface IPortfolio {
 }
 
 export default function Portfolio(props: IPortfolio) {
-    const twitterLink = "https://x.com/VanillaFox2035";
-    const pixivLink = "https://www.pixiv.net/users/15478244";
-    const portfolioUrl = "https://dl.dropboxusercontent.com/scl/fi/jl1ofvcaorabw4urp0dqo/Portfolio.json?rlkey=3rhge7smdjurfoqjc4duyoqoo&st=aja2d9ve&dl=0";
+    const twitterLink = links['twitter'];
+    const pixivLink = links['pixiv'];
+    const portfolioUrl = links['portfolioUrl'];
 
     const [isLoadingPortfolio, setIsLoadingPortfolio] = useState(true);
     const [isLoadingFailed, setIsLoadingFailed] = useState(false);

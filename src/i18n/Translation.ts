@@ -130,7 +130,7 @@ export const en = {
     'reply-within-3-days': 'I will usually reply within 3 days. If I fail to do so, I might have missed your message. In that case, please check in on me again.',
     'refer-to-how-1': 'Please refer to the [How to Request] section in',
     'refer-to-how-2': 'page if you are unsure how to fill out your request.',
-    'for-other-question': 'If you have other questions, contact me via email or my socials.'
+    'for-other-questions': 'If you have other questions, contact me via email or my socials.'
 };
 
 export const cht = {
@@ -258,7 +258,7 @@ export const cht = {
     'closed': '未開放',
     // Contact
     'contact': '聯絡方式',
-    'sumbit-via-email': '委託申請請使用下列email或Google表單：',
+    'sumbit-via-email': '委託申請請使用下列Email或Google表單：',
     'google-form': 'Google表單',
     'commission-link': '[委託相關]',
     'prices-link': '[價目表]',
@@ -268,5 +268,5 @@ export const cht = {
     'reply-within-3-days': '一般在三天內回覆，若未回覆，可能是我漏看，請再次來信或發訊。',
     'refer-to-how-1': '不知道如何填寫委託申請，請參閱',
     'refer-to-how-2': '的[委託詢問]章節。',
-    'for-other-question': '若有其他疑問，可用信箱或社群平台聯繫。'
+    'for-other-questions': '若有其他疑問，可用信箱或社群平台聯繫。'
 };

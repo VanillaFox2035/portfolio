@@ -1,4 +1,4 @@
-import { langDictionary, type Languages } from "../../define/Types";
+import { langDictionary, links, type Languages } from "../../define/Types";
 import { Translator as t} from "../../i18n/Translator";
 import './../Page.css';
 import './Prices.css';
@@ -12,7 +12,7 @@ export interface IPrices {
 }
 
 export default function Prices(props: IPrices) {
-    const commissionStatusUrl = "https://dl.dropboxusercontent.com/scl/fi/z3vpyfcqwyfg5kuwdi2fw/CommissionStatus.json?rlkey=9czot91664v5qt74z5n3jodwf&st=xuti5s4s&dl=0";
+    const commissionStatusUrl = links['commissionStatusUrl'];
     const [isLoadingPrices, setIsLoadingPrices] = useState(true);
     const [isLoadingFailed, setIsLoadingFailed] = useState(false);
     const [prices, setPrices] = useState({});

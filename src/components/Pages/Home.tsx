@@ -1,6 +1,6 @@
 import type { Languages } from "../../define/Types";
 import { Translator as t} from "../../i18n/Translator";
-import { Tabs } from "../../define/Types";
+import { links, Tabs } from "../../define/Types";
 import "./../Page.css";
 import "./Home.css";
 
@@ -12,10 +12,10 @@ export interface IHome {
 
 export default function Home(props: IHome) {
 
-    const showcaseImageLink = "https://dl.dropboxusercontent.com/scl/fi/5h7fra14p67n0b93we5lu/2025_0617_irys_92.jpg?rlkey=2qgo24hkri5aqz7wyktlbh4hb&st=xbd9r1lc&dl=0";
-    const twitterLink = "https://x.com/VanillaFox2035";
-    const pixivLink = "https://www.pixiv.net/users/15478244";
-    const facebookLink = "https://www.facebook.com/Kitsune2035";
+    const showcaseImageLink = links['showcaseImageLink'];
+    const twitterLink = links['twitter'];
+    const pixivLink = links['pixiv'];
+    const facebookLink = links['facebook'];
 
     function getProfileContent() {
         return <>

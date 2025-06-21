@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { langDictionary, Languages } from "../define/Types";
+import { langDictionary, Languages, links } from "../define/Types";
 import { translateToString, fetchJson } from "../define/Tools";
 import { Translator as t} from "../i18n/Translator";
 import './Page.css';
@@ -12,7 +12,7 @@ export interface ICommissionStatus {
 
 export default function CommissionStatus(props: ICommissionStatus) {
     // Use dropbox to store status json files
-    const commissionStatusUrl = "https://dl.dropboxusercontent.com/scl/fi/z3vpyfcqwyfg5kuwdi2fw/CommissionStatus.json?rlkey=9czot91664v5qt74z5n3jodwf&st=xuti5s4s&dl=0";
+    const commissionStatusUrl = links['commissionStatusUrl'];
 
     const [isLoading, setIsLoading] = useState(true);
     const [isCommissionOpen, setIsCommissionOpen] = useState(false);
