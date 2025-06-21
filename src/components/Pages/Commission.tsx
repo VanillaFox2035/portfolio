@@ -165,7 +165,7 @@ export default function Commission(props: ICommission) {
                     )
                 }
                 <h4 className="content">{t('unsure-about-intend', props.language)}</h4>
-                <h4 className="prices-item-description">{t('guidelines-for-commercial', props.language)}</h4>
+                <h4 className="commission-content-description">{t('guidelines-for-commercial', props.language)}</h4>
             </div>
             <div className="panel">
                 <h3 className="content">{t('other-notes', props.language)}</h3>
