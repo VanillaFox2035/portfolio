@@ -2,7 +2,6 @@ import { langDictionary, type Languages } from "../../define/Types";
 import { Translator as t} from "../../i18n/Translator";
 import './../Page.css';
 import './Prices.css';
-import CommissionStatus from "./../CommissionStatus";
 import { useEffect, useState } from "react";
 import { fetchJson, translateToString } from "../../define/Tools";
 
