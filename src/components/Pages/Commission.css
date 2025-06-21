@@ -7,6 +7,11 @@
     text-align: left;
     color: darkgray;
 }
+.commission-content-description-padded {
+    padding-left: 0.5em;
+    text-align: left;
+    color: darkgray;
+}
 
 .commission-content-likable {
     font-weight: bold;

@@ -106,7 +106,7 @@ export default function Commission(props: ICommission) {
                         <>
                         <div className="flex-container-left" key={'accepted-contents-' + likableIndex.toString()}>
                             <h4 className="commission-content-likable">{t(likable, props.language)}</h4>
-                            <h4 className="commission-content-description">{t(likable + "-desc", props.language)}</h4>
+                            <h4 className="commission-content-description-padded">{t(likable + "-desc", props.language)}</h4>
                         </div>
                         {
                                 t(likable + "-items", props.language).map((item, itemIndex) => 
