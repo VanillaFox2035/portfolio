@@ -34,7 +34,7 @@ export default function Home(props: IHome) {
     return (
         <>
             <img className="home-showcase-image" src={showcaseImageLink}/>
-            <div className="content-center">✦ ✦ ✦ ✦ ✦</div>
+            <div className="divider-center">✦ ✦ ✦ ✦ ✦</div>
             <div className="home-panel">
                 {props.isMobile? 
                     // Mobile Profile

@@ -47,20 +47,24 @@ export const en = {
     // [How to Request]
     'how-to-request': 'How to Request',
     'how-to-submit': 'Please submit your commission request via email, including the following information:',
-    'your-name': 'Your name (Or what you preferred to be called)',
-    'commission-type': 'Commission type',
-    'spec-and-quantity': 'Specification and quantity (Dimensions, DPI, etc.)',
-    'artwork-desc': 'Artwork description (Better with reference photos or relevant information)',
-    'usage-desc': 'Usage (Only accepts personal commissions right now; commercial commissions not available)',
-    'deadline-desc': 'Deadline (Please allow at least 7 days for work)',
-    'others-desc': 'Others (Budget, variants, layered PSD file, or other requests. Additional charges may be required.)',
+    'how-to-submit-items': [
+        'Your name (Or what you preferred to be called)',
+        'Commission type',
+        'Specification and quantity (Dimensions, DPI, etc.)',
+        'Artwork description (Better with reference photos or relevant information)',
+        'Usage (Only accepts personal commissions right now; commercial commissions not available)',
+        'Deadline (Please allow at least 7 days for work)',
+        'Others (Budget, variants, layered PSD file, or other requests. Additional charges may be required.)',
+    ],
     'if-not-spec': 'If not specified, the commissioned work will follow these resolutions:',
-    'headshot-spec': 'Headshot: 1200 x 1200 | DPI 300',
-    'others-sepc': "Others: 4320 x 3240 | DPI 300 (Subject to change depending on the artwork's content)",
+    'if-not-spec-items': [
+        'Headshot: 1200 x 1200 | DPI 300',
+        "Others: 4320 x 3240 | DPI 300 (Subject to change depending on the artwork's content)"
+    ],
     // [Accpeted Contents]
     'accepted-contents': 'Accepted Contents',
     'adored': 'Adored',
-    'adored-desc': 'Please give me more of these requests!',
+    'adored-desc': 'Please give me more of these requests ♡',
     'adored-items': ['Cute girls', 'Fan art'],
     'welcomed': 'Welcomed',
     'welcomed-desc': 'Can be accepted',
@@ -81,13 +85,13 @@ export const en = {
     // [Terms of Use]
     'terms-of-use': 'Terms of Use',
     'may-be-used': 'Unless negotiated, personal commissions may be used for:',
-    'may-be-used-desc': [
+    'may-be-used-items': [
         'Personal use or giveaway',
-        'Online promotion or social media posting (Please credit me!)',
+        'Online promotion or social media posting (Please credit me ☆)',
         'Making minor edits without compromising the artwork (e.g. cropping, adding or removing background, adding text)'
     ],
     'do-not-use': 'Please do not:',
-    'do-not-use-desc': [
+    'do-not-use-items': [
         'Use for commercial purposes or profit from my work (e.g. making prints or merchandise)',
         'Publish heavily edited artwork (e.g. changing color palette, proportions, design, making variants, etc.)',
         'Use my artwork to train generative AI'
@@ -107,7 +111,7 @@ export const en = {
     'cancellation-not-attributanble': 'If the cancellation is not attributable to the artist, the deposit will not be refunded.',
     // [Payment Methods]
     'payment-methods': 'Payment Methods',
-    'payment-method-list': [
+    'payment-method-items': [
         {
             'method': 'PayPal',
             'description': 'Priced in USD, additional fees may be required.',
@@ -157,7 +161,7 @@ export const cht = {
     'platforms': '常用平台',
     'english': '| 英文',
     'chinese': '| 中文',
-    'written-by-me': '沒錯，這網站是我自己寫的喔☆',
+    'written-by-me': '沒錯，這網站是我自己寫的喔 ☆',
     // Commission
     'commission-open': '開放委託',
     'commission-closed': '關閉委託',
@@ -181,20 +185,24 @@ export const cht = {
     // [How to Request]
     'how-to-request': '委託詢問',
     'how-to-submit': '委託詢問使用Email為主，信中請附上下列內容：',
-    'your-name': '委託人姓名(或暱稱)',
-    'commission-type': '插圖類型',
-    'spec-and-quantity': '規格需求和數量 (尺寸、DPI等)',
-    'artwork-desc': '繪製內容 (有參考圖或相關資料甚佳)',
-    'usage-desc': '用途 (目前僅接受個人委託，不接受商業圖)',
-    'deadline-desc': '截稿日 (請至少抓7天工作日)',
-    'others-desc': '其他 (預算、差分、PSD分層、其他需求等，依需求加價)',
+    'how-to-submit-items': [
+        '委託人姓名(或暱稱)',
+        '插圖類型',
+        '規格需求和數量 (尺寸、DPI等)',
+        '繪製內容 (有參考圖或相關資料甚佳)',
+        '用途 (目前僅接受個人委託，不接受商業圖)',
+        '截稿日 (請至少抓7天工作日)',
+        '其他 (預算、差分、PSD分層、其他需求等，依需求加價)',
+    ],
     'if-not-spec': '若未指定，會預設以下方規格繪製：',
-    'headshot-spec': '頭像： 1200 x 1200 | DPI 300',
-    'others-sepc': '其他： 4320 x 3240 | DPI 300 (可能依圖片需求更改)',
+    'if-not-spec-items': [
+        '頭像： 1200 x 1200 | DPI 300',
+        '其他： 4320 x 3240 | DPI 300 (可能依圖片需求更改)',
+    ],
     // [Accpeted Contents]
     'accepted-contents': '接受內容',
     'adored': '特愛',
-    'adored-desc': '拜託多給這類委託!',
+    'adored-desc': '拜託多給這類委託 ♡',
     'adored-items': ['萌妹子', '二創角色'],
     'welcomed': '歡迎',
     'welcomed-desc': '可上手的項目',
@@ -215,13 +223,13 @@ export const cht = {
     // [Terms of Use]
     'terms-of-use': '使用規範',
     'may-be-used': '除非特別約定，不然個人稿件可用於：',
-    'may-be-used-desc': [
+    'may-be-used-items': [
         '個人收藏或贈送',
-        '網路宣傳、社群頻道經營 (請標註原作者喔！)',
+        '網路宣傳、社群頻道經營 (請標註原作者喔 ☆)',
         '在不破壞原圖美感情況下加工(如裁切、加背景或去背、加上文字編排)'
     ],
     'do-not-use': '請勿用於：',
-    'do-not-use-desc': [
+    'do-not-use-items': [
         '商業用途或營利 (如印刷、製作周邊商品)',
         '改作後發布 (更改顏色、比例、造型、差分等)',
         '拿作品訓練AI'
@@ -241,7 +249,7 @@ export const cht = {
     'cancellation-not-attributanble': '若非繪師因素取消委託，將不退還訂金。',
     // [Payment Methods]
     'payment-methods': '付款方式 ',
-    'payment-method-list': [
+    'payment-method-items': [
         {
             'method': '匯款',
             'description': '郵局或國泰帳戶，限台灣使用，台幣計價，跨行需手續費',

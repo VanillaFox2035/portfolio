@@ -2,7 +2,7 @@ import { Languages } from "../define/Types";
 import { en, cht } from './Translation';
 
 
-export function Translator(index: string, language: Languages): string {
+export function Translator(index: string, language: Languages): any {
     function selectLanguage(language: Languages): object {
         switch (language) {
             case Languages.En:

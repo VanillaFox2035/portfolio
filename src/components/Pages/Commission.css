@@ -1,0 +1,14 @@
+.commission-content-emphasis {
+    color: red;
+    font-weight: bold;
+}
+
+.commission-content-description {
+    padding-left: 1em;
+    text-align: left;
+    color: darkgray;
+}
+
+.commission-content-likable {
+    font-weight: bold;
+}

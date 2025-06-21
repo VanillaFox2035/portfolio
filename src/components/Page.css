@@ -64,3 +64,11 @@
     color: darkgray;
     margin-top: 1em;
 }
+.divider {
+    color: darkgray;
+    width: fit-content;
+}
+.divider-center {
+    color: darkgray;
+    text-align: center;
+}

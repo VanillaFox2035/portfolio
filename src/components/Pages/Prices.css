@@ -24,6 +24,7 @@
 }
 
 .prices-item-description {
+    text-align: left;
     color: darkgray;
 }
 
