@@ -24,7 +24,7 @@ export default function Page(props: IPage) {
             case Tabs.Commission:
                 return <Commission language={props.language} isMobile={props.isMobile}/>;
             case Tabs.Contact:
-                return <Contact language={props.language} isMobile={props.isMobile}/>;
+                return <Contact language={props.language} isMobile={props.isMobile} changeTab={props.changeTab}/>;
             case Tabs.Prices:
                 return <Prices language={props.language} isMobile={props.isMobile} viewImage={props.viewImage}/>
             default:
