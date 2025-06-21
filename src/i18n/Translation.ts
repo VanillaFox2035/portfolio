@@ -5,7 +5,7 @@ export const en = {
     'header-commission': 'Commission',
     'header-prices': 'Prices',
     'header-contact': 'Contact',
-    'language-icon': 'https://flagsapi.com/GB/flat/32.png',
+    'language-icon': 'https://flagsapi.com/US/flat/32.png',
     'navigate': 'Navigate',
     'language': 'Language',
     // Home
@@ -20,7 +20,7 @@ export const en = {
     'portfolio-link': ' [Portfolio] ',
     'or': 'or',
     'pixiv-link': ' [Pixiv] ',
-    'platforms': 'Platforms',
+    'platforms': 'Socials',
     'english': '| English',
     'chinese': '| Chinese',
     'written-by-me': 'And yes, this website was coded by myself☆',
@@ -32,6 +32,17 @@ export const en = {
     'closed': 'Closed',
     // Contact
     'contact': 'Contact',
+    'sumbit-via-email': 'Please submit your commission requests via the following email or Google Form: ',
+    'google-form': 'Google Form',
+    'commission-link': ' [Commission] ',
+    'prices-link': ' [Prices] ',
+    'read-commission-and-prices-1': 'Please read the',
+    'read-commission-and-prices-2': 'and',
+    'read-commission-and-prices-3': 'pages carefully before proceeding with your request.',
+    'reply-within-3-days': 'I will usually reply within 3 days. If I fail to do so, I might have missed your message. In that case, please check in on me again.',
+    'refer-to-how-1': 'Please refer to the [How to Request] section in',
+    'refer-to-how-2': 'page if you are unsure how to fill out your request.',
+    'for-other-question': 'If you have other questions, contact me via email or my socials.'
 };
 
 export const cht = {
@@ -67,4 +78,15 @@ export const cht = {
     'closed': '未開放',
     // Contact
     'contact': '聯絡方式',
+    'sumbit-via-email': '委託申請請使用下列email或Google表單：',
+    'google-form': 'Google表單',
+    'commission-link': '[委託相關]',
+    'prices-link': '[價目表]',
+    'read-commission-and-prices-1': '請詳閱',
+    'read-commission-and-prices-2': '和',
+    'read-commission-and-prices-3': '內容，確認可接受後再提出委託申請。',
+    'reply-within-3-days': '一般在三天內回覆，若未回覆，可能是我漏看，請再次來信或發訊。',
+    'refer-to-how-1': '不知道如何填寫委託申請，請參閱',
+    'refer-to-how-2': '的[委託詢問]章節。',
+    'for-other-question': '若有其他疑問，可用信箱或社群平台聯繫。'
 };
