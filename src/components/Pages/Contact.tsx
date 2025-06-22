@@ -25,8 +25,8 @@ export default function Contact(props: IContact) {
         <div className="panel">
             <h4 className="content">{t('sumbit-via-email', props.language)}</h4>
             <div className="flex-container-left">
-                <a href={emailLink}><img className="platform-icon" src="/icon/icon-email.png"/></a>
-                <a className="content" href={emailLink}>{emailLink}</a>
+                <a href={'mailto:' + emailLink}><img className="platform-icon" src="/icon/icon-email.png"/></a>
+                <a className="content" href={'mailto:' + emailLink}>{emailLink}</a>
             </div>
             <div className="flex-container-left">
                 <a href={googleFormLink}><img className="platform-icon" src="/icon/icon-google-form.png"/></a>
