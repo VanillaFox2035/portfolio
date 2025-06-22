@@ -51,7 +51,7 @@ export const en = {
         'Your name (Or what you preferred to be called)',
         'Commission type',
         'Specification and quantity (Dimensions, DPI, etc.)',
-        'Artwork description (Better with reference photos or relevant information)',
+        'Commission description (Better with reference photos or relevant information)',
         'Usage (Only accepts personal commissions right now; commercial commissions not available)',
         'Deadline (Please allow at least 7 days for work)',
         'Others (Budget, variants, layered PSD file, or other requests. Additional charges may be required.)',
