@@ -101,7 +101,7 @@ export const en = {
     // [Other Notes]
     'other-notes': 'Other Notes',
     'shared-on-socials': 'The commissioned artwork or drawing process may be shared on my social platforms. If you wish to keep it private, please inform me in advance.',
-    'style-evolves-1': 'I am a self-taught artist. My art style may evolve over time as I learn. The commissioned pieces should reflect my latest style. Please refer to my artworks on the top row on',
+    'style-evolves-1': 'I am a self-taught artist. My art style may evolve over time as I learn. The commissioned pieces should reflect my latest style. Please refer to my artworks on the top rows on',
     'style-evolves-2': 'or on my',
     'style-evolves-3': '.',
     // [Cancellation]
