@@ -124,7 +124,7 @@ export const en = {
     'closed': 'Closed',
     // Contact
     'contact': 'Contact',
-    'sumbit-via-email': 'Please submit your commission requests via the following email or Google Forms: ',
+    'sumbit-via-email': 'Please submit your commission requests via the following email: ',
     'google-forms': 'Google Forms',
     'commission-link': ' [Commission] ',
     'prices-link': ' [Prices] ',
@@ -266,7 +266,7 @@ export const cht = {
     'closed': '未開放',
     // Contact
     'contact': '聯絡方式',
-    'sumbit-via-email': '委託申請請使用下列Email或Google表單：',
+    'sumbit-via-email': '委託申請請使用下列Email：',
     'google-forms': 'Google表單',
     'commission-link': '[委託相關]',
     'prices-link': '[價目表]',

@@ -15,7 +15,7 @@ export default function Contact(props: IContact) {
     const twitterLink = links['twitter'];
     const pixivLink = links['pixiv'];
     const emailLink = links['email'];
-    const googleFormLink = links['googleForm'];
+    //const googleFormLink = links['googleForm'];
 
     return (
     <>
@@ -27,10 +27,6 @@ export default function Contact(props: IContact) {
             <div className="flex-container-left">
                 <a href={'mailto:' + emailLink}><img className="platform-icon" src="/icon/icon-email.png"/></a>
                 <a className="content" href={'mailto:' + emailLink}>{emailLink}</a>
-            </div>
-            <div className="flex-container-left">
-                <a href={googleFormLink}><img className="platform-icon" src="/icon/icon-google-form.png"/></a>
-                <a className="content" href={googleFormLink}>{t('google-forms', props.language)}</a>
             </div>
             <div className="flex-container-left">
                 <div className="content-icon">✦</div>
