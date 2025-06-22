@@ -30,7 +30,7 @@ export default function Contact(props: IContact) {
             </div>
             <div className="flex-container-left">
                 <a href={googleFormLink}><img className="platform-icon" src="/icon/icon-google-form.png"/></a>
-                <a className="content" href={googleFormLink}>{t('google-form', props.language)}</a>
+                <a className="content" href={googleFormLink}>{t('google-forms', props.language)}</a>
             </div>
             <div className="flex-container-left">
                 <div className="content-icon">✦</div>

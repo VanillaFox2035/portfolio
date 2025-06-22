@@ -124,8 +124,8 @@ export const en = {
     'closed': 'Closed',
     // Contact
     'contact': 'Contact',
-    'sumbit-via-email': 'Please submit your commission requests via the following email or Google Form: ',
-    'google-form': 'Google Form',
+    'sumbit-via-email': 'Please submit your commission requests via the following email or Google Forms: ',
+    'google-forms': 'Google Forms',
     'commission-link': ' [Commission] ',
     'prices-link': ' [Prices] ',
     'read-commission-and-prices-1': 'Please read the',
@@ -267,7 +267,7 @@ export const cht = {
     // Contact
     'contact': '聯絡方式',
     'sumbit-via-email': '委託申請請使用下列Email或Google表單：',
-    'google-form': 'Google表單',
+    'google-forms': 'Google表單',
     'commission-link': '[委託相關]',
     'prices-link': '[價目表]',
     'read-commission-and-prices-1': '請詳閱',
@@ -276,5 +276,5 @@ export const cht = {
     'reply-within-3-days': '一般在三天內回覆，若未回覆，可能是我漏看，請再次來信或發訊。',
     'refer-to-how-1': '不知道如何填寫委託申請，請參閱',
     'refer-to-how-2': '的[委託詢問]章節。',
-    'for-other-questions': '若有其他疑問，可用信箱或社群平台聯繫。'
+    'for-other-questions': '若有其他疑問，可用Email或社群平台聯繫。'
 };
