@@ -3,6 +3,7 @@ import { Translator as t } from "../../i18n/Translator"
 import './../Page.css';
 import './Contact.css';
 import { Tabs, links } from "../../define/Types";
+import CommissionStatus from "./../CommissionStatus";
 
 export interface IContact {
     language: Languages;
@@ -20,6 +21,7 @@ export default function Contact(props: IContact) {
     <>
         <br/>
         <h2 className="content-center">{t('contact', props.language)}</h2>
+        <CommissionStatus language={props.language} isMobile={props.isMobile}/>
         <div className="panel">
             <h4 className="content">{t('sumbit-via-email', props.language)}</h4>
             <div className="flex-container-left">

@@ -74,7 +74,7 @@ export const en = {
     'troubled-items': ['Male characters', 'Animal / Furries', 'Machines / Firearms'],
     'refused': 'Refused',
     'refused-desc': 'Will be turned down',
-    'refused-items': ['Extreme violence or gore', 'Hardcore fetishes', 'Realistic art style', 'Politics or controversial topics'],
+    'refused-items': ['Extreme violence or gore', 'Hardcore fetishes', 'Politics or controversial topics'],
     'with-exceptions': ' (With exceptions)',
     // [Revisions]
     'revisions': 'Revisions',
@@ -173,7 +173,7 @@ export const cht = {
     'deposit-desc': '協調繪製內容後，會要求支付50%費用作為訂金，收到款項後才會進入排程。(也可一次付全款)',
     'sketching': '繪製草稿',
     'revision-number': '三次',
-    'sketching-desc-1': '繪製草稿後會向委託人確認，有',
+    'sketching-desc-1': '草稿完成後會向委託人確認，有',
     'sketching-desc-2': '修改機會。',
     'final-payment': '收取尾款',
     'final-payment-desc': '確認草稿沒問題後會要求支付剩餘50%費用，收到款項後才會進入完稿階段。',
@@ -194,7 +194,7 @@ export const cht = {
         '截稿日 (請至少抓7天工作日)',
         '其他 (預算、差分、PSD分層、其他需求等，依需求加價)',
     ],
-    'if-not-spec': '若未指定，會預設以下方規格繪製：',
+    'if-not-spec': '若未指定，預設以下方規格繪製：',
     'if-not-spec-items': [
         '頭像： 1200 x 1200 | DPI 300',
         '其他： 4320 x 3240 | DPI 300 (可能依圖片需求更改)',
@@ -212,7 +212,7 @@ export const cht = {
     'troubled-items': ['男性', '動物 / 獸人', '機械 / 槍械'],
     'refused': '雷區',
     'refused-desc': '拒絕此類委託',
-    'refused-items': ['過於血腥暴力', '重口味性癖', '寫實畫風', '政治等爭議性內容'],
+    'refused-items': ['過於血腥暴力', '重口味性癖', '政治等爭議性內容'],
     'with-exceptions': '(有例外)',
     // [Revisions]
     'revisions': '稿件修改',
@@ -226,13 +226,13 @@ export const cht = {
     'may-be-used-items': [
         '個人收藏或贈送',
         '網路宣傳、社群頻道經營 (請標註原作者喔 ☆)',
-        '在不破壞原圖美感情況下加工(如裁切、加背景或去背、加上文字編排)'
+        '在不破壞原圖美感情況下加工 (如裁切、加背景或去背、加上文字編排)'
     ],
     'do-not-use': '請勿用於：',
     'do-not-use-items': [
         '商業用途或營利 (如印刷、製作周邊商品)',
         '改作後發布 (更改顏色、比例、造型、差分等)',
-        '拿作品訓練AI'
+        '拿作品訓練生成式AI'
     ],
     'unsure-about-intend': '不確定是否在授權範圍內，請來信詢問。',
     'guidelines-for-commercial': '目前不接受商業稿件，商業使用規範日後訂定。',
@@ -252,11 +252,11 @@ export const cht = {
     'payment-method-items': [
         {
             'method': '匯款',
-            'description': '郵局或國泰帳戶，限台灣使用，台幣計價，跨行需手續費',
+            'description': '郵局或國泰帳戶，限台灣使用。台幣計價，跨行需手續費。',
         },
         {
             'method': 'PayPal',
-            'description': '台灣以外地區使用，美金計價，需手續費',
+            'description': '台灣以外地區使用。美金計價，需手續費。',
         }
     ],
     'make-payment-deadline': '請於收到付款通知後10天內付款，若期限內未付款視為取消委託。',

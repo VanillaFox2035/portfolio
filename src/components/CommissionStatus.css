@@ -1,6 +1,5 @@
 .commission-status-panel-closed {
     margin: auto;
-    margin-top: 3em;
     padding: 0.7em;
     border-style: solid;
     border-width: 2px;
@@ -11,7 +10,6 @@
 
 .commission-status-panel-open {
     margin: auto;
-    margin-top: 3em;
     padding: 0.7em;
     border-style: solid;
     border-width: 2px;

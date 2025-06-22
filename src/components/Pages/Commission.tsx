@@ -3,7 +3,6 @@ import { Translator as t} from "../../i18n/Translator";
 import { links, Tabs } from "../../define/Types";
 import './../Page.css';
 import './Commission.css';
-import CommissionStatus from "./../CommissionStatus";
 
 export interface ICommission {
     language: Languages;
@@ -16,7 +15,6 @@ export default function Commission(props: ICommission) {
 
     return (
         <>
-            <CommissionStatus language={props.language} isMobile={props.isMobile}/>
             <br/>
             <h2 className="content-center">{t('header-commission', props.language)}</h2>
             <div className="panel">
@@ -103,7 +101,7 @@ export default function Commission(props: ICommission) {
                 <h3 className="content">{t('accepted-contents', props.language)}</h3>
                 {
                     ['adored', 'welcomed', 'troubled', 'refused'].map((likable, likableIndex) => 
-                        <>
+                        <div>
                         <div className="flex-container-left" key={'accepted-contents-' + likableIndex.toString()}>
                             <h4 className="commission-content-likable">{t(likable, props.language)}</h4>
                             <h4 className="commission-content-description-padded">{t(likable + "-desc", props.language)}</h4>
@@ -120,7 +118,7 @@ export default function Commission(props: ICommission) {
                                     </div>
                                 )
                         }
-                        </>
+                        </div>
                     )
                 }
                 
@@ -203,9 +201,9 @@ export default function Commission(props: ICommission) {
                         <>
                         <div className="flex-container-left" key={'payment-method-items' + index.toString()}>
                             <img className="platform-icon" src="/icon/circle-check.svg"/>
-                            <h4 className="content">{item['method']}</h4>
+                            <h4 className="commission-content-likable">{item['method']}</h4>
                         </div>
-                        <h4 className="commission-content-description">{item['description']}</h4>
+                        <h4 className="content">{item['description']}</h4>
                         </>
                     )
                 }

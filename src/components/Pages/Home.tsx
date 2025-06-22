@@ -1,6 +1,7 @@
 import type { Languages } from "../../define/Types";
 import { Translator as t} from "../../i18n/Translator";
 import { links, Tabs } from "../../define/Types";
+import CommissionStatus from "./../CommissionStatus";
 import "./../Page.css";
 import "./Home.css";
 
@@ -34,7 +35,7 @@ export default function Home(props: IHome) {
     return (
         <>
             <img className="home-showcase-image" src={showcaseImageLink}/>
-            <div className="divider-center">✦ ✦ ✦ ✦ ✦</div>
+            <CommissionStatus language={props.language} isMobile={props.isMobile}/>
             <div className="home-panel">
                 {props.isMobile? 
                     // Mobile Profile
