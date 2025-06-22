@@ -30,18 +30,18 @@ export const en = {
     // [Procedure]
     'procedure': 'Procedure',
     'negotiation': 'Negotiation',
-    'negotiation-desc': "Please organize your commission details before emailing me, and then we will discuss the artwork's details and pricing. Please read through this page thoroughly before proceeding with your request.",
+    'negotiation-desc': "Please organize your commission requests before emailing me, and then we will discuss the artwork's details and pricing. Please read through this page thoroughly before proceeding with your request.",
     'deposit': 'Deposit (50%)',
-    'deposit-desc': 'After the artwork and pricing are confirmed, the client needs to pay 50% deposit to reserve their slot. Work will only start after the payment is received. (You are also welcomed to pay the full amount upfront.)',
+    'deposit-desc': 'After agreeing on the artwork and pricing, the client needs to pay 50% deposit to reserve their slot. Work will only start after the payment is received. (You are also welcomed to pay the full amount upfront.)',
     'sketching': 'Sketching',
     'revision-number': ' 3 ',
     'sketching-desc-1': 'Once the sketch is completed, I will check in with you. You have',
     'sketching-desc-2': 'chances for requesting revision at this stage.',
     'final-payment': 'Final Payment',
-    'final-payment-desc': 'After the sketch is approved, the client needs to pay the remaining 50% of the price. Work will only start after the payment is received.',
+    'final-payment-desc': 'After the sketch is approved, the client needs to pay the remaining 50% of the price for the final piece. Work will only start after the payment is received.',
     'completion': 'Completion',
     'completion-desc-1': 'Once the artwork is completed, I will check in again with you. You have',
-    'completion-desc-2': 'chances for requesting revision at this stage but only for rendering part, not the composition.',
+    'completion-desc-2': 'chances for requesting revision at this stage but only for the rendering. Do not change the composition.',
     'deliver-files': 'Deliver files',
     'deliver-files-desc': 'I will send the final high-resolution PNG file. Please inform me in advance if you need a PSD file as well.',
     // [How to Request]
@@ -67,7 +67,7 @@ export const en = {
     'adored-desc': 'Please give me more of these requests ♡',
     'adored-items': ['Cute girls', 'Fan art'],
     'welcomed': 'Welcomed',
-    'welcomed-desc': 'Can be accepted',
+    'welcomed-desc': 'May be able to draw',
     'welcomed-items': ['Original characters', 'Cute mascots', 'Mild NSFW'],
     'troubled': 'Troubled',
     'troubled-desc': 'Insufficient skills, may not turn out right',
@@ -75,12 +75,12 @@ export const en = {
     'refused': 'Refused',
     'refused-desc': 'Will be turned down',
     'refused-items': ['Extreme violence or gore', 'Hardcore fetishes', 'Politics or controversial topics'],
-    'with-exceptions': ' (With exceptions)',
+    'with-exceptions': ' with exceptions ;)',
     // [Revisions]
     'revisions': 'Revisions',
-    'check-in-on-client': 'The artist will check in with the client after completing the sketches and after completing the whole artwork.',
+    'check-in-on-client': 'The artist will check in with the client after completing the sketches and after completing the final artwork.',
     'chances-for-revision-1': 'The client has',
-    'chances-for-revision-2': 'chances for requesting revision at each check in. Please send all your intended revisions in one message.',
+    'chances-for-revision-2': 'chances for requesting revision at each check in. Please orgainize all your intended revisions in one message.',
     'exceeding-revision-quota': 'Exceeding revision quota or requesting changes that have already been approved will incur additional charges depending on the complexity of the revision.',
     // [Terms of Use]
     'terms-of-use': 'Terms of Use',
@@ -100,14 +100,14 @@ export const en = {
     'guidelines-for-commercial': 'I do not accept commercial commissions right now. Guidelines for commercial usage will be established in the future.',
     // [Other Notes]
     'other-notes': 'Other Notes',
-    'shared-on-socials': 'The commissioned artwork or drawing process may be shared on my socials platforms. If you wish to keep it private, please inform me in advance.',
+    'shared-on-socials': 'The commissioned artwork or drawing process may be shared on my social platforms. If you wish to keep it private, please inform me in advance.',
     'style-evolves-1': 'I am a self-taught artist. My art style may evolve over time as I learn. The commissioned pieces should reflect my latest style. Please refer to my artworks on the top row on',
     'style-evolves-2': 'or on my',
     'style-evolves-3': '.',
     // [Cancellation]
     'cancellation': 'Cancellation',
     'need-to-cancel': 'If you need to cancel a commission, please notify me before I start on the piece.',
-    'if-work-started': 'If work has already started, the client will be charged accordingly base on current progress, 50% at sketching phase, and 100% at completion phase.',
+    'if-work-started': 'If work has already started, the client will be charged accordingly base on the current progress, 50% at sketching phase, and 100% at completion phase.',
     'cancellation-not-attributanble': 'If the cancellation is not attributable to the artist, the deposit will not be refunded.',
     // [Payment Methods]
     'payment-methods': 'Payment Methods',
@@ -118,7 +118,7 @@ export const en = {
         }
     ],
     'make-payment-deadline': 'Please make your payment within 10 days after receiving payment notice. Failure to do so will result in cancellation of the commission.',
-    'late-payment-reason': 'If you are unable to pay within the deadline, please inform me about the reason and provide a specific date for the payment.',
+    'late-payment-reason': 'If you are unable to pay within the deadline, please inform me of the reason and provide a specific date for the payment.',
     // Prices
     'open': 'Open',
     'closed': 'Closed',
@@ -213,7 +213,7 @@ export const cht = {
     'refused': '雷區',
     'refused-desc': '拒絕此類委託',
     'refused-items': ['過於血腥暴力', '重口味性癖', '政治等爭議性內容'],
-    'with-exceptions': '(有例外)',
+    'with-exceptions': '有例外 ;)',
     // [Revisions]
     'revisions': '稿件修改',
     'check-in-on-client': '在草稿和完稿階段，會分別向委託人確認。',
