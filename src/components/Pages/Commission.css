@@ -19,10 +19,12 @@
 }
 .commission-hidden {
     padding-left: 0.2em;
-    color: white;
+    color: black;
+    background-color: black;
 }
 .commission-hidden:hover {
-    color:darksalmon;
+    color: gray;
+    background-color: black;
 }
 .commission-procedure-panel {
     margin: auto;
