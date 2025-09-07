@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
-  "homepage": "https://vanillafox2035.github.io/portfolio/",
-  "private": true,
+  "homepage": "https://vanillafox2035.github.io/portfolio",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
