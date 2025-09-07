@@ -45,12 +45,12 @@ export default function CommissionStatus(props: ICommissionStatus) {
                 :
                 isCommissionOpen ? 
                 <div className="flex-container-center">
-                    <img className="commission-status-icon" src="/icon/circle-check.svg"></img>
+                    <img className="commission-status-icon" src="https://dl.dropboxusercontent.com/scl/fi/4jm2g12r10i1szg0xpnkm/circle-check.svg?rlkey=5p98pj08p24lu27gwlcqf0sa9&st=pqz77wdo&dl=0"></img>
                     <h2 className="commission-status-open-text">{t('commission-open', props.language)}</h2>
                 </div>
                 :
                 <div className="flex-container-center">
-                    <img className="commission-status-icon" src="/icon/circle-x.svg"></img>
+                    <img className="commission-status-icon" src="https://dl.dropboxusercontent.com/scl/fi/cpefen5w8ybzuj1sj4vbj/circle-x.svg?rlkey=yivmy5qg00n1fpo8qg3e3zpls&st=y2mgcrne&dl=0"></img>
                     <h2 className="commission-status-closed-text">{t('commission-closed', props.language)}</h2>
                 </div>
             }

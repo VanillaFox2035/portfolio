@@ -40,13 +40,13 @@ export default function Home(props: IHome) {
                 {props.isMobile? 
                     // Mobile Profile
                     <>
-                        <img className="home-profile-img" src="/icon/profile-image.png"/>
+                        <img className="home-profile-img" src="https://dl.dropboxusercontent.com/scl/fi/obeyvs4hhouit5z0jziig/profile-image.png?rlkey=cat59xwyxauakfucprcgu5pic&st=fb16jn2s&dl=0"/>
                         {getProfileContent()}
                     </>
                     :
                     // Desktop Profile
                     <div className="flex-container-left">
-                        <img className="home-profile-img" src="/icon/profile-image.png"/>
+                        <img className="home-profile-img" src="https://dl.dropboxusercontent.com/scl/fi/obeyvs4hhouit5z0jziig/profile-image.png?rlkey=cat59xwyxauakfucprcgu5pic&st=fb16jn2s&dl=0"/>
                         {getProfileContent()}
                     </div>
                 }
@@ -78,17 +78,17 @@ export default function Home(props: IHome) {
             <div className="home-panel">
                 <h3 className="content">{t('platforms', props.language)}</h3>
                 <div className="flex-container-left">
-                    <a href={twitterLink}><img className="platform-icon" src="/icon/icon-x.png"/></a>
+                    <a href={twitterLink}><img className="platform-icon" src="https://dl.dropboxusercontent.com/scl/fi/cqww62nnb3c7gclsfu6gn/icon-x.png?rlkey=n5j7r96oht59u7947fi8k5av3&st=ljnxobff&dl=0"/></a>
                     <a className="content" href={twitterLink}>@VanillaFox2035</a>
                     <h4 className="content-left-pad">{t('english', props.language)}</h4>
                 </div>
                 <div className="flex-container-left">
-                    <a href={pixivLink}><img className="platform-icon" src="/icon/icon-pixiv.png"/></a>
+                    <a href={pixivLink}><img className="platform-icon" src="https://dl.dropboxusercontent.com/scl/fi/9xbrrf6dz0zzkd5vycy8n/icon-pixiv.png?rlkey=qx6swmh4icn5ab8a4470zp1zx&st=ae096wqr&dl=0"/></a>
                     <a className="content" href={pixivLink}>@15478244</a>
                     <h4 className="content-left-pad">{t('english', props.language)}</h4>
                 </div>
                 <div className="flex-container-left">
-                    <a href={facebookLink}><img className="platform-icon" src="/icon/icon-facebook.png"/></a>
+                    <a href={facebookLink}><img className="platform-icon" src="https://dl.dropboxusercontent.com/scl/fi/w5dzrl2l9cq1pupotnolg/icon-facebook.png?rlkey=zubddlcd2q7k34uoo7sy440ab&st=goh460re&dl=0"/></a>
                     <a className="content" href={facebookLink}>@Kitsune2035</a>
                     <h4 className="content-left-pad">{t('chinese', props.language)}</h4>
                 </div>
