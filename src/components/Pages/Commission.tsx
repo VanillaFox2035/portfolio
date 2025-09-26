@@ -148,7 +148,7 @@ export default function Commission(props: ICommission) {
                 {
                     t('may-be-used-items', props.language).map((item, index) => 
                         <div className="flex-container-left" key={'how-to-sumbit-' + index.toString()}>
-                            <img className="platform-icon" src="https://dl.dropboxusercontent.com/scl/fi/4jm2g12r10i1szg0xpnkm/circle-check.svg?rlkey=5p98pj08p24lu27gwlcqf0sa9&st=90v1dk6g&dl=0"/>
+                            <img className="platform-icon" src={links['green-checkmark-image']}/>
                             <h4 className="content">{item}</h4>
                         </div>
                     )
@@ -157,7 +157,7 @@ export default function Commission(props: ICommission) {
                 {
                     t('do-not-use-items', props.language).map((item, index) => 
                         <div className="flex-container-left" key={'how-to-sumbit-' + index.toString()}>
-                            <img className="platform-icon" src="https://dl.dropboxusercontent.com/scl/fi/hx98phv2lzsd2hva4vjp2/circle-x-red.svg?rlkey=9ixw8pr05nf4iym20h7ise4ry&st=g9bmjnqq&dl=0"/>
+                            <img className="platform-icon" src={links['red-x-image']}/>
                             <h4 className="content">{item}</h4>
                         </div>
                     )
@@ -200,7 +200,7 @@ export default function Commission(props: ICommission) {
                     t('payment-method-items', props.language).map((item, index) => 
                         <>
                         <div className="flex-container-left" key={'payment-method-items' + index.toString()}>
-                            <img className="platform-icon" src="https://dl.dropboxusercontent.com/scl/fi/4jm2g12r10i1szg0xpnkm/circle-check.svg?rlkey=5p98pj08p24lu27gwlcqf0sa9&st=90v1dk6g&dl=0"/>
+                            <img className="platform-icon" src={links['green-checkmark-image']}/>
                             <h4 className="commission-content-likable">{item['method']}</h4>
                         </div>
                         <h4 className="content">{item['description']}</h4>

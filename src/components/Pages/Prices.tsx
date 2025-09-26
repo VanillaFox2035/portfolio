@@ -12,14 +12,13 @@ export interface IPrices {
 }
 
 export default function Prices(props: IPrices) {
-    const commissionStatusUrl = links['commissionStatusUrl'];
     const [isLoadingPrices, setIsLoadingPrices] = useState(true);
     const [isLoadingFailed, setIsLoadingFailed] = useState(false);
     const [prices, setPrices] = useState({});
 
     useEffect(() => {
         // Read prices
-        fetchJson(commissionStatusUrl)
+        fetchJson(links['commission-status-url'])
         .then((json) => {
             setPrices(json);
             setIsLoadingPrices(false);

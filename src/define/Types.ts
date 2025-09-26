@@ -27,13 +27,18 @@ export const links = {
     'email': 'vanillafox2035@gmail.com',
     // images
     'profile-image': 'https://dl.dropboxusercontent.com/scl/fi/obeyvs4hhouit5z0jziig/profile-image.png?rlkey=cat59xwyxauakfucprcgu5pic&st=fb16jn2s&dl=0',
+    'logo-image': 'https://dl.dropboxusercontent.com/scl/fi/j8fu7ts3kcnomdk2ery83/logo.png?rlkey=i0s0i0ci7o5wavk2gkcrp8qgj&st=67e5a5r7&dl=0',
     'showcase-image': 'https://dl.dropboxusercontent.com/scl/fi/5h7fra14p67n0b93we5lu/2025_0617_irys_92.jpg?rlkey=2qgo24hkri5aqz7wyktlbh4hb&st=xbd9r1lc&dl=0',
     'hamburger-image': 'https://dl.dropboxusercontent.com/scl/fi/kcp934aysto334beabgla/hamburger.svg?rlkey=f8bn3kvnzozyn3zvqwad258u9&st=4oywmwxv&dl=0',
     'twitter-image': 'https://dl.dropboxusercontent.com/scl/fi/cqww62nnb3c7gclsfu6gn/icon-x.png?rlkey=n5j7r96oht59u7947fi8k5av3&st=ljnxobff&dl=0',
     'pixiv-image': 'https://dl.dropboxusercontent.com/scl/fi/9xbrrf6dz0zzkd5vycy8n/icon-pixiv.png?rlkey=qx6swmh4icn5ab8a4470zp1zx&st=ae096wqr&dl=0',
     'facebook-image': 'https://dl.dropboxusercontent.com/scl/fi/w5dzrl2l9cq1pupotnolg/icon-facebook.png?rlkey=zubddlcd2q7k34uoo7sy440ab&st=goh460re&dl=0',
+    'email-image': 'https://dl.dropboxusercontent.com/scl/fi/36ljpkrvhje3bmkvpf9fy/icon-email.png?rlkey=q2sk5yrbfbkllxkcyq3vzeedz&st=pcn1fx5l&dl=0',
     'close-button-image': 'https://dl.dropboxusercontent.com/scl/fi/r059t98a7l4mibeicw6yf/button-x.svg?rlkey=6ybclvvtpagsfgivcwmty82l1&st=vijznqt7&dl=0',
+    'green-checkmark-image': 'https://dl.dropboxusercontent.com/scl/fi/4jm2g12r10i1szg0xpnkm/circle-check.svg?rlkey=5p98pj08p24lu27gwlcqf0sa9&st=pqz77wdo&dl=0',
+    'gray-x-image': 'https://dl.dropboxusercontent.com/scl/fi/cpefen5w8ybzuj1sj4vbj/circle-x.svg?rlkey=yivmy5qg00n1fpo8qg3e3zpls&st=y2mgcrne&dl=0',
+    'red-x-image': 'https://dl.dropboxusercontent.com/scl/fi/hx98phv2lzsd2hva4vjp2/circle-x-red.svg?rlkey=9ixw8pr05nf4iym20h7ise4ry&st=g9bmjnqq&dl=0',
     // jsons
-    'commissionStatusUrl': 'https://dl.dropboxusercontent.com/scl/fi/z3vpyfcqwyfg5kuwdi2fw/CommissionStatus.json?rlkey=9czot91664v5qt74z5n3jodwf&st=xuti5s4s&dl=0',
+    'commission-status-url': 'https://dl.dropboxusercontent.com/scl/fi/z3vpyfcqwyfg5kuwdi2fw/CommissionStatus.json?rlkey=9czot91664v5qt74z5n3jodwf&st=xuti5s4s&dl=0',
     'portfolio-url': 'https://dl.dropboxusercontent.com/scl/fi/jl1ofvcaorabw4urp0dqo/Portfolio.json?rlkey=3rhge7smdjurfoqjc4duyoqoo&st=aja2d9ve&dl=0',
 }

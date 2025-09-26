@@ -12,11 +12,6 @@ export interface IContact {
 }
 
 export default function Contact(props: IContact) {
-    const twitterLink = links['twitter'];
-    const pixivLink = links['pixiv'];
-    const emailLink = links['email'];
-    //const googleFormLink = links['googleForm'];
-
     return (
     <>
         <br/>
@@ -25,8 +20,8 @@ export default function Contact(props: IContact) {
         <div className="panel">
             <h4 className="content">{t('sumbit-via-email', props.language)}</h4>
             <div className="flex-container-left">
-                <a href={'mailto:' + emailLink}><img className="platform-icon" src="https://dl.dropboxusercontent.com/scl/fi/36ljpkrvhje3bmkvpf9fy/icon-email.png?rlkey=q2sk5yrbfbkllxkcyq3vzeedz&st=pcn1fx5l&dl=0"/></a>
-                <a className="content" href={'mailto:' + emailLink}>{emailLink}</a>
+                <a href={'mailto:' + links['email']}><img className="platform-icon" src={links['email-image']}/></a>
+                <a className="content" href={'mailto:' + links['email']}>{links['email']}</a>
             </div>
             <div className="flex-container-left">
                 <div className="content-icon">✦</div>
@@ -54,8 +49,9 @@ export default function Contact(props: IContact) {
         <div className="panel">
              <h4 className="content">{t('for-other-questions', props.language)}</h4>
              <div className="flex-container-left">
-                <a href={twitterLink}><img className="portfolio-icon" src="https://dl.dropboxusercontent.com/scl/fi/cqww62nnb3c7gclsfu6gn/icon-x.png?rlkey=n5j7r96oht59u7947fi8k5av3&st=f2pvyo7k&dl=0"/></a>
-                <a href={pixivLink}><img className="portfolio-icon" src="https://dl.dropboxusercontent.com/scl/fi/9xbrrf6dz0zzkd5vycy8n/icon-pixiv.png?rlkey=qx6swmh4icn5ab8a4470zp1zx&st=qxan6obh&dl=0"/></a>
+                <a href={'mailto:' + links['email']}><img className="portfolio-icon" src={links['email-image']}/></a>
+                <a href={links['twitter']}><img className="portfolio-icon" src={links['twitter-image']}/></a>
+                <a href={links['pixiv']}><img className="portfolio-icon" src={links['pixiv-image']}/></a>
              </div>
         </div>
     </>

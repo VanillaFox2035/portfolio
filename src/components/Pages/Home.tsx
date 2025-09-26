@@ -77,17 +77,17 @@ export default function Home(props: IHome) {
             <div className="home-panel">
                 <h3 className="content">{t('support-me', props.language)}</h3>
                 <div className="flex-container-left">
-                    <a href={links['patreon']}><img className="platform-icon" src="https://dl.dropboxusercontent.com/scl/fi/cqww62nnb3c7gclsfu6gn/icon-x.png?rlkey=n5j7r96oht59u7947fi8k5av3&st=ljnxobff&dl=0"/></a>
+                    <a href={links['patreon']}><img className="platform-icon" src=""/></a>
                     <a className="content" href={links['patreon']}>Patreon</a>
                     <h4 className="content-left-pad">{t('patreon-benefit', props.language)}</h4>
                 </div>
                 <div className="flex-container-left">
-                    <a href={links['fanbox']}><img className="platform-icon" src="https://dl.dropboxusercontent.com/scl/fi/cqww62nnb3c7gclsfu6gn/icon-x.png?rlkey=n5j7r96oht59u7947fi8k5av3&st=ljnxobff&dl=0"/></a>
+                    <a href={links['fanbox']}><img className="platform-icon" src=""/></a>
                     <a className="content" href={links['fanbox']}>Fanbox</a>
                     <h4 className="content-left-pad">{t('fanbox-benefit', props.language)}</h4>
                 </div>
                 <div className="flex-container-left">
-                    <a href={links['ko-fi']}><img className="platform-icon" src="https://dl.dropboxusercontent.com/scl/fi/cqww62nnb3c7gclsfu6gn/icon-x.png?rlkey=n5j7r96oht59u7947fi8k5av3&st=ljnxobff&dl=0"/></a>
+                    <a href={links['ko-fi']}><img className="platform-icon" src=""/></a>
                     <a className="content" href={links['ko-fi']}>Ko-fi</a>
                     <h4 className="content-left-pad">{t('ko-fi-benefit', props.language)}</h4>
                 </div>

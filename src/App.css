@@ -58,6 +58,7 @@
   padding: 0.5em;
   width: 180px;
   height: 60px;
+  cursor: pointer;
 }
 .header-logo-center {
   padding: 0.5em;

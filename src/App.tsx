@@ -82,8 +82,8 @@ function App() {
         <>
         <div className='header-background'>
           <div className='header'>
-            <img className='header-hamburger' src={links['hamburgerImage']} onClick={() => {setIsMenuOpen(true)}}/>
-            <img className='header-logo-center' src="https://dl.dropboxusercontent.com/scl/fi/j8fu7ts3kcnomdk2ery83/logo.png?rlkey=i0s0i0ci7o5wavk2gkcrp8qgj&st=67e5a5r7&dl=0"/>
+            <img className='header-hamburger' src={links['hamburger-image']} onClick={() => {setIsMenuOpen(true)}}/>
+            <img className='header-logo-center' src={links['logo-image']}/>
             
           </div>
         </div>
@@ -112,7 +112,7 @@ function App() {
         <>
         <div className='header-background'>
           <div className='header'>
-            <img className='header-logo' src="https://dl.dropboxusercontent.com/scl/fi/j8fu7ts3kcnomdk2ery83/logo.png?rlkey=i0s0i0ci7o5wavk2gkcrp8qgj&st=67e5a5r7&dl=0" onClick={() => {changeTab(Tabs.Home)}}/>
+            <img className='header-logo' src={links['logo-image']} onClick={() => {changeTab(Tabs.Home)}}/>
             {getNavigationButtons(true)}
             <img className='header-item-flag' src={t('language-icon', language)}/>
             <select className='header-language-select' value={translateToString(language, langDictionary)} onChange={(e) => {
@@ -130,7 +130,7 @@ function App() {
         // Image viewer
         isImageViewerOpen &&
         <div className='image-viewer-background' onClick={() => {setIsImageViewerOpen(false)}}>
-          <img className='image-viewer-close' src='https://dl.dropboxusercontent.com/scl/fi/r059t98a7l4mibeicw6yf/button-x.svg?rlkey=6ybclvvtpagsfgivcwmty82l1&st=vijznqt7&dl=0' onClick={() => setIsMenuOpen(false)}/>
+          <img className='image-viewer-close' src={links['close-button-image']} onClick={() => setIsMenuOpen(false)}/>
           <img className='image-viewer-image' src={imageUrl} onClick={() => {setIsImageViewerOpen(false)}}/>
         </div>
       }
