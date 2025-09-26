@@ -127,10 +127,6 @@ export default function Commission(props: ICommission) {
                 <h3 className="content">{t('revisions', props.language)}</h3>
                 <div className="flex-container-left">
                     <div className="content-icon">✦</div>
-                    <h4 className="content">{t('check-in-on-client', props.language)}</h4>
-                </div>
-                <div className="flex-container-left">
-                    <div className="content-icon">✦</div>
                     <div className="content">
                         {t('chances-for-revision-1', props.language)}
                         <span className="commission-content-emphasis">{t('revision-number', props.language)}</span>
@@ -140,6 +136,10 @@ export default function Commission(props: ICommission) {
                 <div className="flex-container-left">
                     <div className="content-icon">✦</div>
                     <h4 className="content">{t('exceeding-revision-quota', props.language)}</h4>
+                </div>
+                <div className="flex-container-left">
+                    <div className="content-icon">✦</div>
+                    <h4 className="content">{t('revision-skeb-like', props.language)}</h4>
                 </div>
             </div>
             <div className="panel">

@@ -45,7 +45,7 @@ export const en = {
     'completion': 'Coloring',
     'completion-desc-1': 'The commissioner will be informed again once the artwork is completed. The commissioner has',
     'completion-desc-2': 'chances for requesting revision of the artwork at this stage, but only limited to issues with coloring. Changes to composition are not allowed.',
-    'deliver-files': 'Deliver files',
+    'deliver-files': 'File Delivery',
     'deliver-files-desc': 'Full-resolution PNG files will be delivered after the artwork is approved. The commissioner can also request PSD files',
     // [How to Request]
     /*
@@ -83,10 +83,10 @@ export const en = {
     'with-exceptions': ' with exceptions ;)',
     // [Revisions]
     'revisions': 'Revisions',
-    'check-in-on-client': 'The commissioner will be informed once the sketch is finished, and once the coloring is completed.',
-    'chances-for-revision-1': 'The commissioner has',
+    'chances-for-revision-1': 'The commissioner will be informed once the sketch is finished, and once the coloring is completed. They have',
     'chances-for-revision-2': 'chances for requesting revision at each time. Please arrange all the intended revisions into one message before sending them out.',
     'exceeding-revision-quota': 'Exceeding revision quota or requesting changes that have already been approved will incur additional charges depending on the complexity of the revision.',
+    'revision-skeb-like': 'Revision does not apply to Skeb-like requests.',
     // [Terms of Use]
     'terms-of-use': 'Terms of Use',
     'may-be-used': 'Personal commissions may be used for:',
@@ -105,7 +105,7 @@ export const en = {
     'guidelines-for-commercial': 'I do not accept commercial commissions right now. Guidelines for commercial usage will be established in the future.',
     // [Cancellation]
     'cancellation': 'Cancellation',
-    'need-to-cancel': 'If you wish to cancel the commission, please notify me as soon as possible before I start on the piece.',
+    'need-to-cancel': 'If you wish to cancel the commission, please notify me as soon as possible before I start on the work.',
     'if-work-started': 'If work has already started, charges apply based on current progress, 50% when sketching, and 100% when coloring.',
     'cancellation-not-attributable': 'If the cancellation is not attributable to the artist, the deposit will not be refunded.',
     // [Payment Methods]
@@ -121,7 +121,7 @@ export const en = {
     // [Other Notes]
     'other-notes': 'Other Notes',
     'shared-on-socials': 'The commissioned artwork or drawing process may be shared on my social platforms. If you wish to keep it private or stay anonymous, please inform me in advance.',
-    'style-evolves-1': 'I am a self-taught artist. My art style may evolve over time as I learn. The commissioned works should reflect my art style at the time.',
+    'style-evolves-1': 'I am a self-taught artist. My art style may evolve over time as I learn. The commissioned artwork should reflect my art style at the time.',
     // Prices
     'open': 'Open',
     'closed': 'Closed',
@@ -221,10 +221,10 @@ export const cht = {
     'with-exceptions': '有例外 ;)',
     // [Revisions]
     'revisions': '稿件修改',
-    'check-in-on-client': '在草稿和上色階段完成後，會分別向委託人確認。',
-    'chances-for-revision-1': '每個階段可以修改',
+    'chances-for-revision-1': '在草稿和上色階段完成後，會分別向委託人確認。每個階段可以修改',
     'chances-for-revision-2': '，修改內容請一次提出。',
     'exceeding-revision-quota': '若超過修改次數或提出前階段已確認沒問題的內容，會視修改幅度另外酌收費用。',
+    'revision-skeb-like': 'Skeb形式委託不可提出修改',
     // [Terms of Use]
     'terms-of-use': '使用規範',
     'may-be-used': '個人稿件可用於：',
