@@ -58,15 +58,16 @@ export default function Prices(props: IPrices) {
                                             <h4 className="prices-item-description">{item['item-description'][translateToString(props.language, langDictionary)]}</h4>
                                         </div>
                                         <div className="flex-container-left">
-                                            <div className="content-icon">✦</div>
                                             <h4 className="content">{item['price'][translateToString(props.language, langDictionary)]}</h4>
                                         </div>
                                         {
                                             item['supplement'][translateToString(props.language, langDictionary)] &&
-                                            <div className="flex-container-left">
-                                                <div className="content-icon">✦</div>
-                                                <h4 className="content">{item['supplement'][translateToString(props.language, langDictionary)]}</h4>
-                                            </div>
+                                            item['supplement'][translateToString(props.language, langDictionary)].map((subItem, subIndex) => 
+                                                <div className="flex-container-left">
+                                                    <div className="content-icon" key={"prices-item-" + index.toString() + "-supplement-" + subIndex.toString()}>✦</div>
+                                                    <h4 className="content">{subItem}</h4>
+                                                </div>
+                                            )
                                         }
                                     </div>
                                     
