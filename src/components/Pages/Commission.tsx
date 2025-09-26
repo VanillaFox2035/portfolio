@@ -75,6 +75,7 @@ export default function Commission(props: ICommission) {
                     <h4 className="content">{t('deliver-files-desc', props.language)}</h4>
                 </div>
             </div>
+            {/*
             <div className="panel">
                 <h3 className="content">{t('how-to-request', props.language)}</h3>
                 <h4 className="content">{t('how-to-submit', props.language)}</h4>
@@ -97,6 +98,7 @@ export default function Commission(props: ICommission) {
                     )
                 }
             </div>
+            */}
             <div className="panel">
                 <h3 className="content">{t('accepted-contents', props.language)}</h3>
                 {
@@ -166,26 +168,9 @@ export default function Commission(props: ICommission) {
                 <h4 className="commission-content-description">{t('guidelines-for-commercial', props.language)}</h4>
             </div>
             <div className="panel">
-                <h3 className="content">{t('other-notes', props.language)}</h3>
-                <div className="flex-container-left">
-                    <div className="content-icon">✦</div>
-                    <h4 className="content">{t('shared-on-socials', props.language)}</h4>
-                </div>
-                <div className="flex-container-left">
-                    <div className="content-icon">✦</div>
-                        <div className="content">
-                        {t('style-evolves-1', props.language)}
-                        <a onClick={() => {props.changeTab(Tabs.Portfolio)}}>{t("portfolio-link", props.language)}</a>
-                        {t('style-evolves-2', props.language)}
-                        <a href={pixivLink}>{t("pixiv-link", props.language)}</a>
-                        {t('style-evolves-3', props.language)}
-                    </div>
-                </div>      
-            </div>
-            <div className="panel">
                 <h3 className="content">{t('cancellation', props.language)}</h3>
                 {
-                    ['need-to-cancel','if-work-started', 'cancellation-not-attributanble']
+                    ['need-to-cancel','if-work-started', 'cancellation-not-attributable']
                     .map((item, index) => 
                         <div className="flex-container-left" key={"flex-container-left-" + index.toString()}>
                             <div className="content-icon">✦</div>
@@ -217,6 +202,19 @@ export default function Commission(props: ICommission) {
                         </div>
                     )
                 }
+            </div>
+            <div className="panel">
+                <h3 className="content">{t('other-notes', props.language)}</h3>
+                <div className="flex-container-left">
+                    <div className="content-icon">✦</div>
+                    <h4 className="content">{t('shared-on-socials', props.language)}</h4>
+                </div>
+                <div className="flex-container-left">
+                    <div className="content-icon">✦</div>
+                        <div className="content">
+                        {t('style-evolves-1', props.language)}
+                    </div>
+                </div>      
             </div>
         </>
         
