@@ -5,6 +5,7 @@ import { translateToString } from './define/Tools';
 import Page from './components/Page';
 import { Translator as t }from './i18n/Translator';
 import { links } from './define/Types';
+import ReactGA from 'react-ga4';
 
 function App() {
   const [width, setWidth] = useState<number>(window.innerWidth);
@@ -22,6 +23,13 @@ function App() {
     setWidth(window.innerWidth);
   }
   useEffect(() => {
+    // Track page view
+    ReactGA.initialize('G-G3H89X28MH');
+    ReactGA.send({
+      hitType: 'pageview',
+      page: window.location.pathname,
+      title: 'App'
+    })
     // On resize window register
     window.addEventListener('resize', onWindowSizeChange);
     // Setting language and tab from url parameters

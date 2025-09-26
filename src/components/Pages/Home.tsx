@@ -77,17 +77,17 @@ export default function Home(props: IHome) {
             <div className="home-panel">
                 <h3 className="content">{t('support-me', props.language)}</h3>
                 <div className="flex-container-left">
-                    <a href={links['patreon']}><img className="platform-icon" src=""/></a>
+                    <a href={links['patreon']}><img className="platform-icon" src={links['patreon-image']}/></a>
                     <a className="content" href={links['patreon']}>Patreon</a>
                     <h4 className="content-left-pad">{t('patreon-benefit', props.language)}</h4>
                 </div>
                 <div className="flex-container-left">
-                    <a href={links['fanbox']}><img className="platform-icon" src=""/></a>
+                    <a href={links['fanbox']}><img className="platform-icon" src={links['fanbox-image']}/></a>
                     <a className="content" href={links['fanbox']}>Fanbox</a>
                     <h4 className="content-left-pad">{t('fanbox-benefit', props.language)}</h4>
                 </div>
                 <div className="flex-container-left">
-                    <a href={links['ko-fi']}><img className="platform-icon" src=""/></a>
+                    <a href={links['ko-fi']}><img className="platform-icon" src={links['ko-fi-image']}/></a>
                     <a className="content" href={links['ko-fi']}>Ko-fi</a>
                     <h4 className="content-left-pad">{t('ko-fi-benefit', props.language)}</h4>
                 </div>

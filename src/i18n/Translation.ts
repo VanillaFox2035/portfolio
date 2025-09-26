@@ -16,12 +16,12 @@ export const en = {
     'anime-illustrations': 'Anime illustrations & comics',
     'animations': 'Frame by frame animations',
     'socials': 'Socials',
-    'english': '| English',
-    'chinese': '| Chinese',
+    'english': '- English',
+    'chinese': '- Chinese',
     'support-me': 'Support me',
-    'patreon-benefit': '| Exclusive illustrations & timelapses',
-    'fanbox-benefit': '| Exclusive illustrations',
-    'ko-fi-benefit': '| Tip or commission me',
+    'patreon-benefit': '- Exclusive illustrations & timelapses',
+    'fanbox-benefit': '- Exclusive illustrations',
+    'ko-fi-benefit': '- Buy me a boba tea',
     'written-by-me': 'And yes, this website was coded by myself☆',
     // Portfolio
     'portfolio-want-more': 'Want to see more? Check out:',
@@ -135,7 +135,7 @@ export const en = {
     'reply-within-3-days': 'I will usually reply within 3 days. If I fail to do so, I might have missed your message. In that case, please check in on me again.',
     'refer-to-how-1': 'Please refer to the [How to Request] section in',
     'refer-to-how-2': 'page if you are unsure how to fill out your request.',
-    'for-other-questions': 'If you have other questions, contact me via email or my socials.'
+    'for-other-questions': 'If you have other questions, contact me via email or direct messages through my socials.'
 };
 
 export const cht = {
@@ -155,15 +155,15 @@ export const cht = {
     'anime-illustrations': '日系動漫插畫 & 漫畫',
     'animations': '逐格動畫',
     'socials': '常用平台',
-    'english': '| 英文',
-    'chinese': '| 中文',
+    'english': '- 英文',
+    'chinese': '- 中文',
     'support-me': '贊助我',
-    'patreon-benefit': '| 限定圖 & 作畫過程',
-    'fanbox-benefit': '| 限定圖',
-    'ko-fi-benefit': '| 打賞或委託',
+    'patreon-benefit': '- 限定圖 & 作畫過程',
+    'fanbox-benefit': '- 限定圖',
+    'ko-fi-benefit': '- 請我一杯珍奶',
     'written-by-me': '沒錯，這網站是我自己寫的喔 ☆',
     // Portfolio
-    'portfolio-want-more': '想看更多圖？請來：',
+    'portfolio-want-more': '想看更多圖？請到：',
     // Commission
     'commission-open': '開放委託',
     'commission-closed': '關閉委託',
@@ -278,5 +278,5 @@ export const cht = {
     'reply-within-3-days': '一般在三天內回覆，若未回覆，可能是我漏看，請再次來信或發訊。',
     'refer-to-how-1': '不知道如何填寫委託申請，請參閱',
     'refer-to-how-2': '的[委託詢問]章節。',
-    'for-other-questions': '若有其他疑問，可用Email或社群平台聯繫。'
+    'for-other-questions': '若有其他疑問，可用Email或社群平台私訊聯繫。'
 };
