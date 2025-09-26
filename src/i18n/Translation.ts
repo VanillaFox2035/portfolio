@@ -131,7 +131,7 @@ export const en = {
     'submit-via-forms': 'Or you can submit your commission request via the forms:',
     'commission-link': ' [Commission] ',
     'prices-link': ' [Prices] ',
-    'read-commission-and-prices-1': 'Please read ',
+    'read-commission-and-prices-1': 'Please read through',
     'read-commission-and-prices-2': 'and',
     'read-commission-and-prices-3': ' carefully before proceeding with your request.',
     'reply-within-3-days': 'I usually reply within 3 days. I might have missed your message if failing to do so. Please check in on me again in that case.',
