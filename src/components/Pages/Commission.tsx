@@ -1,6 +1,6 @@
 import type { Languages } from "../../define/Types";
 import { Translator as t} from "../../i18n/Translator";
-import { links, Tabs } from "../../define/Types";
+import { links } from "../../define/Types";
 import './../Page.css';
 import './Commission.css';
 
@@ -11,8 +11,6 @@ export interface ICommission {
 }
 
 export default function Commission(props: ICommission) {
-    const pixivLink = links['pixiv'];
-
     return (
         <>
             <br/>
