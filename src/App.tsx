@@ -4,6 +4,7 @@ import { Languages, Tabs, langDictionary, tabDictionary } from './define/Types';
 import { translateToString } from './define/Tools';
 import Page from './components/Page';
 import { Translator as t }from './i18n/Translator';
+import { links } from './define/Types';
 
 function App() {
   const [width, setWidth] = useState<number>(window.innerWidth);
@@ -81,7 +82,7 @@ function App() {
         <>
         <div className='header-background'>
           <div className='header'>
-            <img className='header-hamburger' src='/https://dl.dropboxusercontent.com/scl/fi/kcp934aysto334beabgla/hamburger.svg?rlkey=f8bn3kvnzozyn3zvqwad258u9&st=4oywmwxv&dl=0' onClick={() => {setIsMenuOpen(true)}}/>
+            <img className='header-hamburger' src={links['hamburgerImage']} onClick={() => {setIsMenuOpen(true)}}/>
             <img className='header-logo-center' src="https://dl.dropboxusercontent.com/scl/fi/j8fu7ts3kcnomdk2ery83/logo.png?rlkey=i0s0i0ci7o5wavk2gkcrp8qgj&st=67e5a5r7&dl=0"/>
             
           </div>
@@ -89,7 +90,7 @@ function App() {
           <Page currentPage={tab} language={language} isMobile={isMobile} changeTab={setTab} viewImage={viewImage}/>
           {isMenuOpen && <div className='hamburger-menu'>
             <br/>
-            <img className='hamburger-menu-close' src='https://dl.dropboxusercontent.com/scl/fi/r059t98a7l4mibeicw6yf/button-x.svg?rlkey=6ybclvvtpagsfgivcwmty82l1&st=vijznqt7&dl=0' onClick={() => setIsMenuOpen(false)}/>
+            <img className='hamburger-menu-close' src={links['close-button-image']} onClick={() => setIsMenuOpen(false)}/>
             <br/>
             <br/>
             <h2>{t('navigate', language)}</h2>

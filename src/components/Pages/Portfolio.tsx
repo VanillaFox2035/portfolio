@@ -12,16 +12,12 @@ export interface IPortfolio {
 }
 
 export default function Portfolio(props: IPortfolio) {
-    const twitterLink = links['twitter'];
-    const pixivLink = links['pixiv'];
-    const portfolioUrl = links['portfolioUrl'];
-
     const [isLoadingPortfolio, setIsLoadingPortfolio] = useState(true);
     const [isLoadingFailed, setIsLoadingFailed] = useState(false);
     const [portfolio, setPortfolio] = useState({});
 
     useEffect(() => {
-        fetchJson(portfolioUrl)
+        fetchJson(links['portfolio-url'])
         .then((json) => {
             setPortfolio(json);
             setIsLoadingPortfolio(false);
@@ -37,8 +33,11 @@ export default function Portfolio(props: IPortfolio) {
         <>
             <br/>
             <h2 className="content-center">{t('header-portfolio', props.language)}</h2>
-            <a href={twitterLink}><img className="portfolio-icon" src="https://dl.dropboxusercontent.com/scl/fi/cqww62nnb3c7gclsfu6gn/icon-x.png?rlkey=n5j7r96oht59u7947fi8k5av3&st=9dk800j8&dl=0"/></a>
-            <a href={pixivLink}><img className="portfolio-icon" src="https://dl.dropboxusercontent.com/scl/fi/9xbrrf6dz0zzkd5vycy8n/icon-pixiv.png?rlkey=qx6swmh4icn5ab8a4470zp1zx&st=cixumypw&dl=0"/></a>
+            <div className="flex-container">
+                <h4 className="content-left-pad">{t('portfolio-want-more', props.language)}</h4>
+                <a href={links['twitter']}><img className="portfolio-icon" src={links['twitter-image']}/></a>
+                <a href={links['pixiv']}><img className="portfolio-icon" src={links['pixiv-image']}/></a>
+            </div>
             <div className="portfolio-panel">
                 {
                     isLoadingFailed ?
