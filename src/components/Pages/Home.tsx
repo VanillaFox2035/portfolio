@@ -92,6 +92,17 @@ export default function Home(props: IHome) {
                     <h4 className="content-left-pad">{t('ko-fi-benefit', props.language)}</h4>
                 </div>
             </div>
+            <div className="home-panel">
+                <h3 className="content">{t('contact-me', props.language)}</h3>
+                <div className="flex-container-left">
+                    <a href={'mailto' + links['email']}><img className="platform-icon" src={links['email-image']}/></a>
+                    <a className="content" href={'mailto' + links['email']}>{links['email']}</a>
+                </div>
+                <div className="flex-container-left">
+                    <a href={links['google-forms']}><img className="platform-icon" src={links['google-forms-image']}/></a>
+                    <a className="content" href={links['google-forms']}>{t('commission-forms', props.language)}</a>
+                </div>
+            </div>
             <h4 className="ps">
                 {t('written-by-me', props.language)}
             </h4>

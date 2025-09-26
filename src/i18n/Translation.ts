@@ -22,6 +22,8 @@ export const en = {
     'patreon-benefit': '- Exclusive illustrations & timelapses',
     'fanbox-benefit': '- Exclusive illustrations',
     'ko-fi-benefit': '- Buy me a boba tea',
+    'contact-me': 'Contact me',
+    'commission-forms': 'Commission Forms',
     'written-by-me': 'And yes, this website was coded by myself☆',
     // Portfolio
     'portfolio-want-more': 'Want to see more? Check out:',
@@ -125,17 +127,14 @@ export const en = {
     'closed': 'Closed',
     // Contact
     'contact': 'Contact',
-    'sumbit-via-email': 'Please submit your commission requests via the following email: ',
-    'google-forms': 'Google Forms',
+    'submit-via-email': 'If you want to commission me or have any questions, you can contact me via email or direct messages:',
+    'submit-via-forms': 'Or you can submit your commission request via the forms:',
     'commission-link': ' [Commission] ',
     'prices-link': ' [Prices] ',
-    'read-commission-and-prices-1': 'Please read the',
+    'read-commission-and-prices-1': 'Please read ',
     'read-commission-and-prices-2': 'and',
-    'read-commission-and-prices-3': 'pages carefully before proceeding with your request.',
+    'read-commission-and-prices-3': ' carefully before proceeding with your request.',
     'reply-within-3-days': 'I will usually reply within 3 days. If I fail to do so, I might have missed your message. In that case, please check in on me again.',
-    'refer-to-how-1': 'Please refer to the [How to Request] section in',
-    'refer-to-how-2': 'page if you are unsure how to fill out your request.',
-    'for-other-questions': 'If you have other questions, contact me via email or direct messages through my socials.'
 };
 
 export const cht = {
@@ -154,13 +153,15 @@ export const cht = {
     'what-i-do': '主要創作',
     'anime-illustrations': '日系動漫插畫 & 漫畫',
     'animations': '逐格動畫',
-    'socials': '常用平台',
+    'socials': '平台',
     'english': '- 英文',
     'chinese': '- 中文',
     'support-me': '贊助我',
     'patreon-benefit': '- 限定圖 & 作畫過程',
     'fanbox-benefit': '- 限定圖',
     'ko-fi-benefit': '- 請我一杯珍奶',
+    'contact-me': '聯繫我',
+    'commission-forms': '委託表單',
     'written-by-me': '沒錯，這網站是我自己寫的喔 ☆',
     // Portfolio
     'portfolio-want-more': '想看更多圖？請到：',
@@ -268,15 +269,12 @@ export const cht = {
     'closed': '未開放',
     // Contact
     'contact': '聯絡方式',
-    'sumbit-via-email': '委託申請請使用下列Email：',
-    'google-forms': 'Google表單',
+    'submit-via-email': '若想委託或有其他疑問，可以Email或使用下列平台私訊：',
+    'submit-via-forms': '或直接使用表單委託：',
     'commission-link': '[委託相關]',
     'prices-link': '[價目表]',
     'read-commission-and-prices-1': '請詳閱',
     'read-commission-and-prices-2': '和',
     'read-commission-and-prices-3': '內容，確認可接受後再提出委託申請。',
-    'reply-within-3-days': '一般在三天內回覆，若未回覆，可能是我漏看，請再次來信或發訊。',
-    'refer-to-how-1': '不知道如何填寫委託申請，請參閱',
-    'refer-to-how-2': '的[委託詢問]章節。',
-    'for-other-questions': '若有其他疑問，可用Email或社群平台私訊聯繫。'
+    'reply-within-3-days': '一般會在三天內回覆，若未回覆，可能是我漏看，請再次來信或發訊。',
 };

@@ -23,7 +23,7 @@ export const links = {
     'ko-fi': 'https://ko-fi.com/vanillafox2035',
     'vgen': 'https://vgen.co/VanillaFox2035/',
     'booth': 'https://vanillafox2035.booth.pm/',
-    'googleForm': 'https://docs.google.com/forms/d/e/1FAIpQLSdy-B0Ju2bh2r7GmUZk8Q6jgusmK7jv-kx9u3AbS7huSFMaiA/viewform?usp=header',
+    'google-forms': 'https://docs.google.com/forms/d/e/1FAIpQLSdYljZXsyVolmA5BZ1qwTm0yGPyJ1SDSv6wa2xB-6gzzQA69w/viewform?usp=sharing&ouid=115214375722577269856',
     'email': 'vanillafox2035@gmail.com',
     // images
     'profile-image': 'https://dl.dropboxusercontent.com/scl/fi/obeyvs4hhouit5z0jziig/profile-image.png?rlkey=cat59xwyxauakfucprcgu5pic&st=fb16jn2s&dl=0',
@@ -38,6 +38,7 @@ export const links = {
     'ko-fi-image': 'https://dl.dropboxusercontent.com/scl/fi/g9o5uy8v0jgo59lmw9zp4/icon-ko-fi.png?rlkey=2aje7akf1hatjqxjxha6scr29&st=vqzx9bq4&dl=0',
     'vgen-image': 'https://dl.dropboxusercontent.com/scl/fi/tdck4dtr1qps1pglmc7dd/icon-vgen.png?rlkey=e0bnpic2w2f1pb90mrsmluqgh&st=f3w0ymgx&dl=0',
     'booth-image': 'https://dl.dropboxusercontent.com/scl/fi/gxbe8qhicm36ljaezlnbn/icon-booth.png?rlkey=poeiq5y6ac9oqiifrry6z1ow5&st=8wnfd6tn&dl=0',
+    'google-forms-image': 'https://dl.dropboxusercontent.com/scl/fi/o4hf9n8mmdu4usriqta9e/icon-google-form.png?rlkey=1evu83k17dkhuq6oe34a6qmk2&st=ewm7rcec&dl=0',
     'email-image': 'https://dl.dropboxusercontent.com/scl/fi/a77ntwt4fiq4k0wpkuqnf/icon-mail.png?rlkey=hm9r5uun93aybn6630dszw2vm&st=q2oa8knl&dl=0',
     'close-button-image': 'https://dl.dropboxusercontent.com/scl/fi/r059t98a7l4mibeicw6yf/button-x.svg?rlkey=6ybclvvtpagsfgivcwmty82l1&st=vijznqt7&dl=0',
     'green-checkmark-image': 'https://dl.dropboxusercontent.com/scl/fi/4jm2g12r10i1szg0xpnkm/circle-check.svg?rlkey=5p98pj08p24lu27gwlcqf0sa9&st=pqz77wdo&dl=0',

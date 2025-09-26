@@ -17,12 +17,8 @@ export default function Contact(props: IContact) {
         <br/>
         <h2 className="content-center">{t('contact', props.language)}</h2>
         <CommissionStatus language={props.language} isMobile={props.isMobile}/>
+
         <div className="panel">
-            <h4 className="content">{t('sumbit-via-email', props.language)}</h4>
-            <div className="flex-container-left">
-                <a href={'mailto:' + links['email']}><img className="platform-icon" src={links['email-image']}/></a>
-                <a className="content" href={'mailto:' + links['email']}>{links['email']}</a>
-            </div>
             <div className="flex-container-left">
                 <div className="content-icon">✦</div>
                 <div className="content">
@@ -36,23 +32,27 @@ export default function Contact(props: IContact) {
             <div className="flex-container-left">
                 <div className="content-icon">✦</div>
                 <h4 className="content">{t('reply-within-3-days', props.language)}</h4>
-            </div>
-            <div className="flex-container-left">
-                <div className="content-icon">✦</div>
-                    <div className="content">
-                    {t('refer-to-how-1', props.language)}
-                    <a onClick={() => {props.changeTab(Tabs.Commission)}}>{t("commission-link", props.language)}</a>
-                    {t("refer-to-how-2", props.language)}
-                </div>
-            </div>      
+            </div>    
         </div>
         <div className="panel">
-             <h4 className="content">{t('for-other-questions', props.language)}</h4>
-             <div className="flex-container-left">
-                <a href={'mailto:' + links['email']}><img className="portfolio-icon" src={links['email-image']}/></a>
-                <a href={links['twitter']}><img className="portfolio-icon" src={links['twitter-image']}/></a>
-                <a href={links['pixiv']}><img className="portfolio-icon" src={links['pixiv-image']}/></a>
-             </div>
+            <h4 className="content">{t('submit-via-email', props.language)}</h4>
+            <div className="flex-container-left">
+                <a href={'mailto:' + links['email']}><img className="platform-icon" src={links['email-image']}/></a>
+                <a className="content" href={'mailto:' + links['email']}>{links['email']}</a>
+            </div>
+            <div className="flex-container-left">
+                <a href={links['twitter']}><img className="platform-icon" src={links['twitter-image']}/></a>
+                <a className="content" href={links['twitter']}>Twitter</a>
+            </div>
+            <div className="flex-container-left">
+                <a href={links['pixiv']}><img className="platform-icon" src={links['pixiv-image']}/></a>
+                <a className="content" href={links['pixiv']}>Pixiv</a>
+            </div>
+            <h4 className="content">{t('submit-via-forms', props.language)}</h4>
+            <div className="flex-container-left">
+                <a href={links['google-forms']}><img className="platform-icon" src={links['google-forms-image']}/></a>
+                <a className="content" href={links['google-forms']}>{t('commission-forms', props.language)}</a>
+            </div> 
         </div>
     </>
     )
