@@ -47,4 +47,6 @@ export const links = {
     // jsons
     'commission-url': 'https://dl.dropboxusercontent.com/scl/fi/z3vpyfcqwyfg5kuwdi2fw/Commission.json?rlkey=9czot91664v5qt74z5n3jodwf&st=zqn4mlue&dl=0',
     'portfolio-url': 'https://dl.dropboxusercontent.com/scl/fi/jl1ofvcaorabw4urp0dqo/Portfolio.json?rlkey=3rhge7smdjurfoqjc4duyoqoo&st=aja2d9ve&dl=0',
+    // strings
+    'ga-id': 'G-G3H89X28MH',
 }

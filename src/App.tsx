@@ -24,7 +24,7 @@ function App() {
   }
   useEffect(() => {
     // Track page view
-    ReactGA.initialize('G-G3H89X28MH');
+    ReactGA.initialize(links['ga-id']);
     ReactGA.send({
       hitType: 'pageview',
       page: window.location.pathname,
@@ -49,6 +49,11 @@ function App() {
     params.set('lang', translateToString(language, langDictionary));
     updateUrlParams();
     setLanguage(language);
+    // Record language event
+    ReactGA.event({
+      category: "language",
+      action: translateToString(language, langDictionary),
+    });
     setIsMenuOpen(false);
   }
 
@@ -58,6 +63,11 @@ function App() {
     params.set('tab', translateToString(tab, tabDictionary));
     updateUrlParams();
     setTab(tab);
+    // Record page view
+    ReactGA.event({
+      category: "tab",
+      action: translateToString(tab, tabDictionary),
+    });
     setIsMenuOpen(false);
   }
 
