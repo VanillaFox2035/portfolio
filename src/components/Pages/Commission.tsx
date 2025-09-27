@@ -109,7 +109,7 @@ export default function Commission(props: ICommission) {
                         {
                                 t(likable + "-items", props.language).map((item, itemIndex) => 
                                    <div className="flex-container-left" key={'accepted-contents-' + likableIndex.toString() + '-item-' + itemIndex.toString()}>
-                                        <div className="content-icon">✦</div>
+                                        <div className="content-icon">-</div>
                                         <h4 className={likableIndex === 3 && itemIndex === 1 ? "commission-revealer" : "content"}  key={`accepted-contents-${likableIndex}-item-${itemIndex}`}>{item}</h4>
                                         {
                                             likableIndex === 3 && itemIndex === 1 &&

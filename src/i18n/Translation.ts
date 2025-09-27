@@ -153,7 +153,7 @@ export const cht = {
     'what-i-do': '主要創作',
     'anime-illustrations': '日系動漫插畫 & 漫畫',
     'animations': '逐格動畫',
-    'socials': '平台',
+    'socials': '社群平台',
     'english': '- 英文',
     'chinese': '- 中文',
     'support-me': '贊助我',
@@ -224,7 +224,7 @@ export const cht = {
     'chances-for-revision-1': '在草稿和上色階段完成後，會分別向委託人確認。每個階段可以修改',
     'chances-for-revision-2': '，修改內容請一次提出。',
     'exceeding-revision-quota': '若超過修改次數或提出前階段已確認沒問題的內容，會視修改幅度另外酌收費用。',
-    'revision-skeb-like': 'Skeb形式委託不可提出修改',
+    'revision-skeb-like': 'Skeb形式委託不可提出修改。',
     // [Terms of Use]
     'terms-of-use': '使用規範',
     'may-be-used': '個人稿件可用於：',
