@@ -45,6 +45,6 @@ export const links = {
     'gray-x-image': 'https://dl.dropboxusercontent.com/scl/fi/cpefen5w8ybzuj1sj4vbj/circle-x.svg?rlkey=yivmy5qg00n1fpo8qg3e3zpls&st=y2mgcrne&dl=0',
     'red-x-image': 'https://dl.dropboxusercontent.com/scl/fi/hx98phv2lzsd2hva4vjp2/circle-x-red.svg?rlkey=9ixw8pr05nf4iym20h7ise4ry&st=g9bmjnqq&dl=0',
     // jsons
-    'commission-status-url': 'https://dl.dropboxusercontent.com/scl/fi/z3vpyfcqwyfg5kuwdi2fw/CommissionStatus.json?rlkey=9czot91664v5qt74z5n3jodwf&st=xuti5s4s&dl=0',
+    'commission-url': 'https://dl.dropboxusercontent.com/scl/fi/z3vpyfcqwyfg5kuwdi2fw/Commission.json?rlkey=9czot91664v5qt74z5n3jodwf&st=zqn4mlue&dl=0',
     'portfolio-url': 'https://dl.dropboxusercontent.com/scl/fi/jl1ofvcaorabw4urp0dqo/Portfolio.json?rlkey=3rhge7smdjurfoqjc4duyoqoo&st=aja2d9ve&dl=0',
 }

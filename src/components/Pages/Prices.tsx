@@ -18,7 +18,7 @@ export default function Prices(props: IPrices) {
 
     useEffect(() => {
         // Read prices
-        fetchJson(links['commission-status-url'])
+        fetchJson(links['commission-url'])
         .then((json) => {
             setPrices(json);
             setIsLoadingPrices(false);

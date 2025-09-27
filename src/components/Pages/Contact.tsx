@@ -48,11 +48,33 @@ export default function Contact(props: IContact) {
                 <a href={links['pixiv']}><img className="platform-icon" src={links['pixiv-image']}/></a>
                 <a className="content" href={links['pixiv']}>Pixiv</a>
             </div>
+            <div className="flex-container-left">
+                    <a href={links['facebook']}><img className="platform-icon" src={links['facebook-image']}/></a>
+                    <a className="content" href={links['facebook']}>Facebook</a>
+            </div>
             <h4 className="content">{t('submit-via-forms', props.language)}</h4>
             <div className="flex-container-left">
                 <a href={links['google-forms']}><img className="platform-icon" src={links['google-forms-image']}/></a>
                 <a className="content" href={links['google-forms']}>{t('commission-forms', props.language)}</a>
             </div> 
+        </div>
+        <div className="panel">
+            <h4 className="content">{t('alternative-support', props.language)}</h4>
+                <div className="flex-container-left">
+                    <a href={links['patreon']}><img className="platform-icon" src={links['patreon-image']}/></a>
+                    <a className="content" href={links['patreon']}>Patreon</a>
+                    <h4 className="content-left-pad">{t('patreon-benefit', props.language)}</h4>
+                </div>
+                <div className="flex-container-left">
+                    <a href={links['fanbox']}><img className="platform-icon" src={links['fanbox-image']}/></a>
+                    <a className="content" href={links['fanbox']}>Fanbox</a>
+                    <h4 className="content-left-pad">{t('fanbox-benefit', props.language)}</h4>
+                </div>
+                <div className="flex-container-left">
+                    <a href={links['ko-fi']}><img className="platform-icon" src={links['ko-fi-image']}/></a>
+                    <a className="content" href={links['ko-fi']}>Ko-fi</a>
+                    <h4 className="content-left-pad">{t('ko-fi-benefit', props.language)}</h4>
+                </div>
         </div>
     </>
     )

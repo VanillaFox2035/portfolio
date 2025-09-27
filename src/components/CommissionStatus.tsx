@@ -17,7 +17,7 @@ export default function CommissionStatus(props: ICommissionStatus) {
     const [description, setDescription] = useState({});
 
     useEffect(() => {
-        fetchJson(links['commission-status-url'])
+        fetchJson(links['commission-url'])
         .then((json) => {
             setIsCommissionOpen(json['commission-status']['is-open']);
             const status = json['commission-status']['status'];

@@ -74,7 +74,7 @@ export const en = {
     'welcomed': '⭐Welcomed',
     'welcomed-desc': 'Sure, can do!',
     'welcomed-items': ['Original characters', 'Cute mascots', 'Mild NSFW'],
-    'troubled': '🌀Troubled',
+    'troubled': '☁️Troubled',
     'troubled-desc': 'Insufficient skills, may not turn out as expected',
     'troubled-items': ['Male characters', 'Animal / Furries', 'Machines / Firearms'],
     'refused': '🚫Refused',
@@ -135,6 +135,7 @@ export const en = {
     'read-commission-and-prices-2': 'and',
     'read-commission-and-prices-3': ' carefully before proceeding with your request.',
     'reply-within-3-days': 'I usually reply within 3 days. I might have missed your message if failing to do so. Please check in on me again in that case.',
+    'alternative-support': 'Alternatively, you can also support me using the following:',
 };
 
 export const cht = {
@@ -164,7 +165,7 @@ export const cht = {
     'commission-forms': '委託表單',
     'written-by-me': '沒錯，這網站是我自己寫的喔 ☆',
     // Portfolio
-    'portfolio-want-more': '想看更多圖？請到：',
+    'portfolio-want-more': '想看更多圖？ 請到：',
     // Commission
     'commission-open': '開放委託',
     'commission-closed': '關閉委託',
@@ -172,13 +173,13 @@ export const cht = {
     'procedure': '委託流程',
     'negotiation': '討論',
     'negotiation-desc': '討論繪製內容和價格。詢問前請先詳閱本頁面所有內容。',
-    'deposit': '收取訂金(50%)',
+    'deposit': '收取訂金 (50%)',
     'deposit-desc': '確認繪製內容後，會要求支付50%費用作為訂金，收到款項後才會進入排程。(也可一次付全款)',
     'sketching': '草稿',
     'revision-number': '三次',
     'sketching-desc-1': '草稿完成後會向委託人確認，有',
     'sketching-desc-2': '修改機會。',
-    'final-payment': '收取尾款(50%)',
+    'final-payment': '收取尾款 (50%)',
     'final-payment-desc': '確認草稿沒問題後會要求支付剩餘50%費用，收到款項後才會進入上色階段。',
     'completion': '上色',
     'completion-desc-1': '上色後會再次向委託人確認，有',
@@ -212,7 +213,7 @@ export const cht = {
     'welcomed': '⭐歡迎',
     'welcomed-desc': '行，沒問題！',
     'welcomed-items': ['原創角色', '可愛吉祥物', '微エロ'],
-    'troubled': '🌀為難',
+    'troubled': '☁️為難',
     'troubled-desc': '功力不足，可能差強人意',
     'troubled-items': ['男性', '動物 / 獸人', '機械 / 槍械'],
     'refused': '🚫雷區',
@@ -269,7 +270,7 @@ export const cht = {
     'closed': '未開放',
     // Contact
     'contact': '聯絡方式',
-    'submit-via-email': '若想委託或有其他疑問，可以Email或使用下列平台私訊：',
+    'submit-via-email': '若想委託或有其他疑問，可以Email或使用下列社群平台私訊：',
     'submit-via-forms': '或直接使用表單委託：',
     'commission-link': '[委託相關]',
     'prices-link': '[價目表]',
@@ -277,4 +278,5 @@ export const cht = {
     'read-commission-and-prices-2': '和',
     'read-commission-and-prices-3': '內容，確認可接受後再提出委託申請。',
     'reply-within-3-days': '一般會在三天內回覆，若未回覆，可能是我漏看，請再次來信或發訊。',
+    'alternative-support': '你也另外可用下列方式支持我：',
 };
