@@ -13,6 +13,48 @@ export const tabDictionary = {
     'prices':Tabs.Prices,
     'contact': Tabs.Contact
 };
+const url = 'https://portfoliodata.vanillafox.site:4100/';
+const iconUrl = url + 'img/icon/';
+export const links = {
+    // Websites
+    'twitter': 'https://x.com/VanillaFox2035',
+    'pixiv': 'https://www.pixiv.net/users/15478244',
+    'facebook': 'https://www.facebook.com/Kitsune2035',
+    'patreon': 'https://www.patreon.com/vanillafox2035',
+    'fanbox': 'https://vanillafox2035.fanbox.cc/',
+    'ko-fi': 'https://ko-fi.com/vanillafox2035',
+    'vgen': 'https://vgen.co/VanillaFox2035/',
+    'booth': 'https://vanillafox2035.booth.pm/',
+    'google-forms': 'https://docs.google.com/forms/d/e/1FAIpQLSdYljZXsyVolmA5BZ1qwTm0yGPyJ1SDSv6wa2xB-6gzzQA69w/viewform?usp=sharing&ouid=115214375722577269856',
+    'email': 'vanillafox2035@gmail.com',
+    // images
+    'profile-image': iconUrl + 'profile-image.png',
+    'logo-image': iconUrl + 'logo.png',
+    'showcase-image': url + 'img/banner/2025_0617_irys_92.jpg',
+    'hamburger-image': iconUrl + 'hamburger.svg',
+    'twitter-image': iconUrl + 'icon-x.png',
+    'pixiv-image': iconUrl + 'icon-pixiv.png',
+    'facebook-image': iconUrl + 'icon-facebook.png',
+    'patreon-image': iconUrl + 'icon-patreon.png',
+    'fanbox-image': iconUrl + 'icon-fanbox.png',
+    'ko-fi-image': iconUrl + 'icon-ko-fi.png',
+    'vgen-image': iconUrl + 'icon-vgen.png',
+    'booth-image': iconUrl + 'icon-booth.png',
+    'google-forms-image': iconUrl + 'icon-google-form.png',
+    'email-image': iconUrl + 'icon-mail.png',
+    'close-button-image': iconUrl + 'icon-x.svg',
+    'green-checkmark-image': iconUrl + 'circle-check.svg',
+    'gray-x-image': iconUrl + 'circle-x.svg',
+    'red-x-image': iconUrl + 'circle-x-red.svg',
+    // jsons
+    'commission-url': url + 'commission',
+    'gallery-url': url + 'gallery',
+    // strings
+    'ga-id': 'G-G3H89X28MH',
+}
+
+// Old links using Dropbox
+/*
 export const links = {
     // Websites
     'twitter': 'https://x.com/VanillaFox2035',
@@ -46,7 +88,8 @@ export const links = {
     'red-x-image': 'https://dl.dropboxusercontent.com/scl/fi/hx98phv2lzsd2hva4vjp2/circle-x-red.svg?rlkey=9ixw8pr05nf4iym20h7ise4ry&st=g9bmjnqq&dl=0',
     // jsons
     'commission-url': 'https://dl.dropboxusercontent.com/scl/fi/z3vpyfcqwyfg5kuwdi2fw/Commission.json?rlkey=9czot91664v5qt74z5n3jodwf&st=zqn4mlue&dl=0',
-    'portfolio-url': 'https://dl.dropboxusercontent.com/scl/fi/jl1ofvcaorabw4urp0dqo/Portfolio.json?rlkey=3rhge7smdjurfoqjc4duyoqoo&st=aja2d9ve&dl=0',
+    'gallery-url': 'https://dl.dropboxusercontent.com/scl/fi/jl1ofvcaorabw4urp0dqo/Portfolio.json?rlkey=3rhge7smdjurfoqjc4duyoqoo&st=aja2d9ve&dl=0',
     // strings
     'ga-id': 'G-G3H89X28MH',
 }
+*/

@@ -17,7 +17,7 @@ export default function Portfolio(props: IPortfolio) {
     const [portfolio, setPortfolio] = useState({});
 
     useEffect(() => {
-        fetchJson(links['portfolio-url'])
+        fetchJson(links['gallery-url'])
         .then((json) => {
             setPortfolio(json);
             setIsLoadingPortfolio(false);
