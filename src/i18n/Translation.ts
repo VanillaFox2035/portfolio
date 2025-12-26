@@ -5,7 +5,7 @@ export const en = {
     'header-commission': 'Commission',
     'header-prices': 'Prices',
     'header-contact': 'Contact',
-    'language-icon': 'https://flagsapi.com/US/flat/32.png',
+    'language-icon': 'https://flagsapi.com/GB/flat/32.png',
     'navigate': 'Navigate',
     'language': 'Language',
     // Home

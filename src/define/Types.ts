@@ -42,7 +42,7 @@ export const links = {
     'booth-image': iconUrl + 'icon-booth.png',
     'google-forms-image': iconUrl + 'icon-google-form.png',
     'email-image': iconUrl + 'icon-mail.png',
-    'close-button-image': iconUrl + 'icon-x.svg',
+    'close-button-image': iconUrl + 'button-x.svg',
     'green-checkmark-image': iconUrl + 'circle-check.svg',
     'gray-x-image': iconUrl + 'circle-x.svg',
     'red-x-image': iconUrl + 'circle-x-red.svg',
