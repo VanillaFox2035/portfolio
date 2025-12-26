@@ -1,8 +1,12 @@
-# Vanilla Fox's Portfolio
+## Install
+* Run:
+```
+npm install
+npm run dev
+```
 
+## Deploy
 * To deploy the website, run:
 ```
-npm run predeploy
 npm run deploy
 ```
-* Then add a file name ```CNAME``` at the root directory of the branch ```gh-pages``` on GitHub, its content should be ```portfolio.vanillafox.site```
